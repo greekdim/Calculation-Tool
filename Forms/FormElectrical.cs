@@ -14,6 +14,9 @@ namespace Calc_Tool___Rev_A.Forms
     {
         public FormElectrical()
         {
+
+
+
             InitializeComponent();
         }
     }
