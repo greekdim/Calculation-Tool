@@ -1,0 +1,124 @@
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.exe
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.deps.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.runtimeconfig.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.AssemblyReference.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Form1.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Properties.Resources.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.GenerateResource.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfoInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfo.cs
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.CoreCompileInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\refint\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.genruntimeconfig.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\ref\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormFlow.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormDutyCycle.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormElectrical.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormLeakage.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormThreads.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormUnits.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormVolumeFilling.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.AssemblyReference.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Form1.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormDutyCycle.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormElectrical.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormFlow.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormLeakage.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormThreads.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormUnits.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormVolumeFilling.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Properties.Resources.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.GenerateResource.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfoInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfo.cs
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.CoreCompileInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\refint\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.exe
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.deps.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.runtimeconfig.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.genruntimeconfig.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Tentative réparation\Calc Tool - Rev A\obj\Debug\net6.0-windows\ref\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.exe
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.deps.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.runtimeconfig.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.AssemblyReference.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Form1.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormDutyCycle.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormElectrical.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormFlow.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormLeakage.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormThreads.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormUnits.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormVolumeFilling.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Properties.Resources.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.GenerateResource.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfoInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfo.cs
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.CoreCompileInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\refint\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.genruntimeconfig.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Réparé\Calc Tool - Rev A\obj\Debug\net6.0-windows\ref\Calc Tool - Rev A.dll
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.exe
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.deps.json
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.runtimeconfig.json
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Form1.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormDutyCycle.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormElectrical.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormFlow.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormLeakage.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormThreads.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormUnits.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormVolumeFilling.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Properties.Resources.resources
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.GenerateResource.cache
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfoInputs.cache
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfo.cs
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.CoreCompileInputs.cache
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\refint\Calc Tool - Rev A.dll
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.genruntimeconfig.cache
+C:\Users\bi.developer\OneDrive - MAC VALVES EUROPE, INC\Bureau\Calc Tool - Rev A\obj\Debug\net6.0-windows\ref\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.exe
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.deps.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.runtimeconfig.json
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\bin\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.AssemblyReference.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Form1.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormDutyCycle.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormElectrical.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormFlow.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormLeakage.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormThreads.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormUnits.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Forms.FormVolumeFilling.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc_Tool___Rev_A.Properties.Resources.resources
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.GenerateResource.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfoInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.AssemblyInfo.cs
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.csproj.CoreCompileInputs.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\refint\Calc Tool - Rev A.dll
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.pdb
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\Calc Tool - Rev A.genruntimeconfig.cache
+C:\Users\soult\Documents\Programmation\Projets divers\Calculation tools\Version Définitive\Calc Tool - Rev A\obj\Debug\net6.0-windows\ref\Calc Tool - Rev A.dll
