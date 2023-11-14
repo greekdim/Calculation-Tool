@@ -28,20 +28,20 @@ namespace Calc_Tool___Rev_A.ClassesCalculs
             {
                 if (_selectedConversion == "Cv to Kv and orifice")
                 {
-                    result1 = value / 1.156;
-                    result2 = Math.Sqrt(36 * value);
+                    result1 = Math.Round(value / 1.156, 3);
+                    result2 = Math.Round(Math.Sqrt(36 * value), 3);
                     return ConversionCv.CvToOthers;
                 }
                 else if (_selectedConversion == "Kv to Cv and orifice")
                 {
-                    result1 = 1.156 * value;
-                    result2 = Math.Sqrt(36 * result1);
+                    result1 = Math.Round(1.156 * value, 3);
+                    result2 = Math.Round(Math.Sqrt(36 * result1), 3);
                     return ConversionCv.KvToOthers;
                 }
                 else
                 {
-                    result1 = (value * value) / 36;
-                    result2 = result1 / 1.156;
+                    result1 = Math.Round((value * value) / 36, 3);
+                    result2 = Math.Round(result1 / 1.156, 3);
                     return ConversionCv.OrificeToOthers;
                 }
             }
