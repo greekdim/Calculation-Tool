@@ -30,11 +30,11 @@
         {
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCalculateOrifice = new System.Windows.Forms.Button();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.lblResult = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.lblResult1 = new System.Windows.Forms.Label();
             this.comboBoxCvKvOr = new System.Windows.Forms.ComboBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txtValueToCalc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel4 = new System.Windows.Forms.Panel();
@@ -77,7 +77,7 @@
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
             this.panel1.Controls.Add(this.comboBoxCvKvOr);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.txtValueToCalc);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Location = new System.Drawing.Point(648, -1);
             this.panel1.Name = "panel1";
@@ -94,26 +94,6 @@
             this.btnCalculateOrifice.UseVisualStyleBackColor = true;
             this.btnCalculateOrifice.Click += new System.EventHandler(this.btnCalculateOrifice_Click);
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(238)))));
-            this.panel2.Controls.Add(this.lblResult);
-            this.panel2.Location = new System.Drawing.Point(35, 166);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(254, 70);
-            this.panel2.TabIndex = 4;
-            // 
-            // lblResult
-            // 
-            this.lblResult.AutoSize = true;
-            this.lblResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblResult.ForeColor = System.Drawing.Color.Black;
-            this.lblResult.Location = new System.Drawing.Point(3, 7);
-            this.lblResult.Name = "lblResult";
-            this.lblResult.Size = new System.Drawing.Size(138, 25);
-            this.lblResult.TabIndex = 4;
-            this.lblResult.Text = "Orifice = 3 mm";
-            // 
             // label2
             // 
             this.label2.AutoSize = true;
@@ -124,6 +104,26 @@
             this.label2.Size = new System.Drawing.Size(66, 25);
             this.label2.TabIndex = 3;
             this.label2.Text = "Result";
+            // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(238)))));
+            this.panel2.Controls.Add(this.lblResult1);
+            this.panel2.Location = new System.Drawing.Point(35, 166);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(254, 70);
+            this.panel2.TabIndex = 4;
+            // 
+            // lblResult1
+            // 
+            this.lblResult1.AutoSize = true;
+            this.lblResult1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResult1.ForeColor = System.Drawing.Color.Black;
+            this.lblResult1.Location = new System.Drawing.Point(3, 7);
+            this.lblResult1.Name = "lblResult1";
+            this.lblResult1.Size = new System.Drawing.Size(159, 25);
+            this.lblResult1.TabIndex = 4;
+            this.lblResult1.Text = "Kv = 3 // Orifice=";
             // 
             // comboBoxCvKvOr
             // 
@@ -137,14 +137,13 @@
             this.comboBoxCvKvOr.Name = "comboBoxCvKvOr";
             this.comboBoxCvKvOr.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCvKvOr.TabIndex = 2;
-            this.comboBoxCvKvOr.SelectedIndexChanged += new System.EventHandler(this.comboBoxCvKvOr_SelectedIndexChanged);
             // 
-            // textBox1
+            // txtValueToCalc
             // 
-            this.textBox1.Location = new System.Drawing.Point(35, 55);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 31);
-            this.textBox1.TabIndex = 1;
+            this.txtValueToCalc.Location = new System.Drawing.Point(35, 55);
+            this.txtValueToCalc.Name = "txtValueToCalc";
+            this.txtValueToCalc.Size = new System.Drawing.Size(150, 31);
+            this.txtValueToCalc.TabIndex = 1;
             // 
             // label1
             // 
@@ -153,9 +152,9 @@
             this.label1.ForeColor = System.Drawing.Color.White;
             this.label1.Location = new System.Drawing.Point(35, 20);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(294, 25);
+            this.label1.Size = new System.Drawing.Size(240, 25);
             this.label1.TabIndex = 0;
-            this.label1.Text = "Convert Cv, Kv, Orifice [mm] ";
+            this.label1.Text = "Convert Cv, Kv, Orifice ";
             // 
             // panel3
             // 
@@ -448,9 +447,9 @@
         private Panel panel1;
         private Label label1;
         private ComboBox comboBoxCvKvOr;
-        private TextBox textBox1;
+        private TextBox txtValueToCalc;
         private Panel panel2;
-        private Label lblResult;
+        private Label lblResult1;
         private Label label2;
         private Panel panel3;
         private ComboBox comboBox2;

@@ -22,23 +22,39 @@ namespace Calc_Tool___Rev_A.ClassesCalculs
             _selectedConversion = selectedConversion;
         }
 
-        public ConversionCv SetLabel(out String result)
+        public ConversionCv GiveResult(double value, out double result1, out double result2)
         {
-            if (_selectedConversion == "Cv to Kv and orifice")
+            if (value > 0)
             {
-                result = "Cv =";
-                return ConversionCv.CvToOthers;
-            }
-            else if (_selectedConversion == "Kv to Cv and orifice")
-            {
-                result = "Kv =";
-                return ConversionCv.KvToOthers;
+                if (_selectedConversion == "Cv to Kv and orifice")
+                {
+                    result1 = value / 1.156;
+                    result2 = Math.Sqrt(36 * value);
+                    return ConversionCv.CvToOthers;
+                }
+                else if (_selectedConversion == "Kv to Cv and orifice")
+                {
+                    result1 = 1.156 * value;
+                    result2 = Math.Sqrt(36 * result1);
+                    return ConversionCv.KvToOthers;
+                }
+                else
+                {
+                    result1 = (value * value) / 36;
+                    result2 = result1 / 1.156;
+                    return ConversionCv.OrificeToOthers;
+                }
             }
             else
             {
-                result = "Orifice =";
-                return ConversionCv.OrificeToOthers;
+                result1 = 0;
+                result2 = 0;
+                return ConversionCv.Fail;
             }
+
         }
-    }
+
 }
+
+}
+

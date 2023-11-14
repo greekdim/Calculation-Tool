@@ -19,32 +19,41 @@ namespace Calc_Tool___Rev_A.Forms
         public FormFlow()
         {
             InitializeComponent();
-            comboBoxCvKvOr.SelectedIndex = 0;
+            lblResult1.Text = "";
         }
 
-        private void comboBoxCvKvOr_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            String text;
-            conv=new CvKvOConversion(comboBoxCvKvOr.Text);
 
-            ConversionCv typeConv=conv.SetLabel(out text);
-            switch (typeConv)
+
+       private void btnCalculateOrifice_Click(object sender, EventArgs e)
+        {
+            //ErrorProvider.Clear();
+            //errorProvider1.Clear();
+            conv = new CvKvOConversion(comboBoxCvKvOr.Text);
+            try
             {
-                case ConversionCv.CvToOthers:
-                    lblResult.Text = text;
-                    break;
-                case ConversionCv.KvToOthers:
-                    lblResult.Text = text;
-                    break ;
-                case ConversionCv.OrificeToOthers:
-                    lblResult.Text = text;
-                    break;
+                double val = Double.Parse(txtValueToCalc.Text);
+                ConversionCv typeConv = conv.GiveResult(val, out double result1, out double result2);
+                switch (typeConv)
+                {
+                    case ConversionCv.CvToOthers:
+                        lblResult1.Text= "Kv = " + result1 + "\n" + "Orifice = " + result2;
+                        break;
+                    case ConversionCv.KvToOthers:
+                        lblResult1.Text = "Cv = " + result1 + "\n" + "Orifice = " + result2;
+                        break;
+                    case ConversionCv.OrificeToOthers:
+                        lblResult1.Text = "Cv = " + result1 + "\n" + "Kv = " + result2;
+                        break;
+                    case ConversionCv.Fail:
+                        throw new Exception();   
+                }
             }
-        }
-
-        private void btnCalculateOrifice_Click(object sender, EventArgs e)
-        {
-
+            catch
+            {
+                
+                //ErrorProvider.SetError(btnCalculateOrifice, "Variable must be a positive number");
+               // errorProvider1.SetError(btnCalculateOrifice, "Variable must be a positive number");
+            }
         }
 
 
