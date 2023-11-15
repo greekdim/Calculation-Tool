@@ -107,6 +107,7 @@
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = true;
+            this.button7.Click += new System.EventHandler(this.button7_Click);
             // 
             // btnThreads
             // 
@@ -126,6 +127,7 @@
             this.btnThreads.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnThreads.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnThreads.UseVisualStyleBackColor = true;
+            this.btnThreads.Click += new System.EventHandler(this.btnThreads_Click);
             // 
             // btnVol
             // 
@@ -145,6 +147,7 @@
             this.btnVol.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnVol.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnVol.UseVisualStyleBackColor = true;
+            this.btnVol.Click += new System.EventHandler(this.btnVol_Click);
             // 
             // btnDutyCycle
             // 
@@ -164,6 +167,7 @@
             this.btnDutyCycle.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnDutyCycle.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnDutyCycle.UseVisualStyleBackColor = true;
+            this.btnDutyCycle.Click += new System.EventHandler(this.btnDutyCycle_Click);
             // 
             // btnUnits
             // 
@@ -183,6 +187,7 @@
             this.btnUnits.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnUnits.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnUnits.UseVisualStyleBackColor = true;
+            this.btnUnits.Click += new System.EventHandler(this.btnUnits_Click);
             // 
             // btnLeakage
             // 
@@ -202,6 +207,7 @@
             this.btnLeakage.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnLeakage.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnLeakage.UseVisualStyleBackColor = true;
+            this.btnLeakage.Click += new System.EventHandler(this.btnLeakage_Click);
             // 
             // btnElec
             // 
@@ -221,6 +227,7 @@
             this.btnElec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnElec.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnElec.UseVisualStyleBackColor = true;
+            this.btnElec.Click += new System.EventHandler(this.btnElec_Click);
             // 
             // btnFlow
             // 
@@ -240,6 +247,7 @@
             this.btnFlow.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btnFlow.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.btnFlow.UseVisualStyleBackColor = true;
+            this.btnFlow.Click += new System.EventHandler(this.btnFlow_Click);
             // 
             // panelLogo
             // 
@@ -290,6 +298,7 @@
             this.btnMaximize.Text = "o";
             this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 
@@ -305,6 +314,7 @@
             this.btnMinimize.Text = "–";
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
@@ -320,6 +330,7 @@
             this.btnClose.Text = "x";
             this.btnClose.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnClose.UseVisualStyleBackColor = true;
+            this.btnClose.Click += new System.EventHandler(this.btnClose_Click);
             // 
             // btnCloseChildForm
             // 
@@ -332,6 +343,7 @@
             this.btnCloseChildForm.Size = new System.Drawing.Size(111, 100);
             this.btnCloseChildForm.TabIndex = 1;
             this.btnCloseChildForm.UseVisualStyleBackColor = true;
+            this.btnCloseChildForm.Click += new System.EventHandler(this.btnCloseChildForm_Click);
             // 
             // lblTitle
             // 
@@ -379,6 +391,7 @@
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://www.macvalves.com/";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureMac
             // 
