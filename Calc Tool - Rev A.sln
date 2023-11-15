@@ -1,9 +1,9 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
-VisualStudioVersion = 17.1.32319.34
+VisualStudioVersion = 17.8.34309.116
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc Tool - Rev A", "..\Calc Tool - Rev A\Calc Tool - Rev A.csproj", "{46611846-5E28-424C-B610-41C26F526909}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Calc Tool - Rev A", "Calc Tool - Rev A.csproj", "{C9FED28F-801A-4328-9A16-6C301981B5C3}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -11,15 +11,15 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{46611846-5E28-424C-B610-41C26F526909}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{46611846-5E28-424C-B610-41C26F526909}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{46611846-5E28-424C-B610-41C26F526909}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{46611846-5E28-424C-B610-41C26F526909}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C9FED28F-801A-4328-9A16-6C301981B5C3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C9FED28F-801A-4328-9A16-6C301981B5C3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C9FED28F-801A-4328-9A16-6C301981B5C3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C9FED28F-801A-4328-9A16-6C301981B5C3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
-		SolutionGuid = {D7E35816-27B5-4934-85FC-AAEEA2635B45}
+		SolutionGuid = {5B47A701-8D36-4206-A3A4-ED6516EA0E60}
 	EndGlobalSection
 EndGlobal
