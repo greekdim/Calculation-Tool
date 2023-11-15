@@ -19,31 +19,46 @@ namespace Calc_Tool___Rev_A.Forms
         public FormFlow()
         {
             InitializeComponent();
-            comboBoxCvKvOr.SelectedIndex = 0;
+            lblResult1.Text = "";
         }
 
-        private void comboBoxCvKvOr_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            String text;
-            conv=new CvKvOConversion(comboBoxCvKvOr.Text);
 
-            ConversionCv typeConv=conv.SetLabel(out text);
-            switch (typeConv)
+
+       private void btnCalculateOrifice_Click(object sender, EventArgs e)
+        {
+            
+            conv = new CvKvOConversion(comboBoxCvKvOr.Text);
+            try
             {
-                case ConversionCv.CvToOthers:
-                    lblResult.Text = text;
-                    break;
-                case ConversionCv.KvToOthers:
-                    lblResult.Text = text;
-                    break ;
-                case ConversionCv.OrificeToOthers:
-                    lblResult.Text = text;
-                    break;
+                // Remplacer les points par des virgules si présents dans la chaîne
+                string userInput = txtValueToCalc.Text.Replace('.', ',');
+                double val = Double.Parse(userInput);
+                ConversionCv typeConv = conv.GiveResult(val, out double result1, out double result2);
+                switch (typeConv)
+                {
+                    case ConversionCv.CvToOthers:
+                        lblResult1.Text= "Kv = " + result1 + "\n" + "Orifice = " + result2 + " mm";
+                        break;
+                    case ConversionCv.KvToOthers:
+                        lblResult1.Text = "Cv = " + result1 + "\n" + "Orifice = " + result2 + "mm";
+                        break;
+                    case ConversionCv.OrificeToOthers:
+                        lblResult1.Text = "Cv = " + result1 + "\n" + "Kv = " + result2;
+                        break;
+                    case ConversionCv.Fail:
+                        //throw new Exception();   
+                        throw new ApplicationException("Please enter a positive value");
+                }
             }
-        }
-
-        private void btnCalculateOrifice_Click(object sender, EventArgs e)
-        {
+            catch (FormatException)
+            {
+                MessageBox.Show("Please enter a valid numeric value", "Format error");
+            }
+            catch (Exception ex)
+            {
+                // Gérer l'exception générée dans le cas ConversionCv.Fail
+                MessageBox.Show("An error has occured: " + ex.Message, "Execution error");
+            }
 
         }
 
