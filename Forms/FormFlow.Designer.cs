@@ -37,34 +37,35 @@
             this.txtValueToCalc = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.lblUnitFlow = new System.Windows.Forms.Label();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.rBFlow = new System.Windows.Forms.RadioButton();
+            this.rBCv = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.lblFlowResult = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
-            this.textBox7 = new System.Windows.Forms.TextBox();
             this.textBox6 = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.lblUnitName = new System.Windows.Forms.Label();
             this.textBox5 = new System.Windows.Forms.TextBox();
-            this.comboBox7 = new System.Windows.Forms.ComboBox();
+            this.cBOutPressUnit = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
-            this.comboBox6 = new System.Windows.Forms.ComboBox();
+            this.cBInPressUnit = new System.Windows.Forms.ComboBox();
             this.textBox3 = new System.Windows.Forms.TextBox();
-            this.comboBox5 = new System.Windows.Forms.ComboBox();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
+            this.cBMedium = new System.Windows.Forms.ComboBox();
+            this.cBTempUnit = new System.Windows.Forms.ComboBox();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.cBMediumType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -137,6 +138,7 @@
             this.comboBoxCvKvOr.Name = "comboBoxCvKvOr";
             this.comboBoxCvKvOr.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCvKvOr.TabIndex = 2;
+            this.comboBoxCvKvOr.Text = "Make a selection";
             // 
             // txtValueToCalc
             // 
@@ -158,187 +160,211 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.lblUnitFlow);
+            this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.panel4);
             this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox7);
             this.panel3.Controls.Add(this.textBox6);
-            this.panel3.Controls.Add(this.label13);
-            this.panel3.Controls.Add(this.label12);
+            this.panel3.Controls.Add(this.lblUnitName);
             this.panel3.Controls.Add(this.textBox5);
-            this.panel3.Controls.Add(this.comboBox7);
+            this.panel3.Controls.Add(this.cBOutPressUnit);
             this.panel3.Controls.Add(this.textBox4);
-            this.panel3.Controls.Add(this.comboBox6);
+            this.panel3.Controls.Add(this.cBInPressUnit);
             this.panel3.Controls.Add(this.textBox3);
-            this.panel3.Controls.Add(this.comboBox5);
-            this.panel3.Controls.Add(this.comboBox4);
+            this.panel3.Controls.Add(this.cBMedium);
+            this.panel3.Controls.Add(this.cBTempUnit);
             this.panel3.Controls.Add(this.textBox2);
-            this.panel3.Controls.Add(this.comboBox3);
-            this.panel3.Controls.Add(this.comboBox2);
+            this.panel3.Controls.Add(this.cBMediumType);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
             this.panel3.Controls.Add(this.label9);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label7);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.label4);
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(642, 635);
             this.panel3.TabIndex = 1;
             // 
+            // lblUnitFlow
+            // 
+            this.lblUnitFlow.AutoSize = true;
+            this.lblUnitFlow.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUnitFlow.ForeColor = System.Drawing.Color.Black;
+            this.lblUnitFlow.Location = new System.Drawing.Point(374, 460);
+            this.lblUnitFlow.Name = "lblUnitFlow";
+            this.lblUnitFlow.Size = new System.Drawing.Size(42, 22);
+            this.lblUnitFlow.TabIndex = 30;
+            this.lblUnitFlow.Text = "Unit";
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.Controls.Add(this.rBFlow);
+            this.groupBox1.Controls.Add(this.rBCv);
+            this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.groupBox1.Location = new System.Drawing.Point(37, 65);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(363, 76);
+            this.groupBox1.TabIndex = 29;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Calculation Type";
+            // 
+            // rBFlow
+            // 
+            this.rBFlow.AutoSize = true;
+            this.rBFlow.Location = new System.Drawing.Point(181, 36);
+            this.rBFlow.Name = "rBFlow";
+            this.rBFlow.Size = new System.Drawing.Size(116, 26);
+            this.rBFlow.TabIndex = 1;
+            this.rBFlow.Text = "Flow Rate";
+            this.rBFlow.UseVisualStyleBackColor = true;
+            // 
+            // rBCv
+            // 
+            this.rBCv.AutoSize = true;
+            this.rBCv.Checked = true;
+            this.rBCv.Location = new System.Drawing.Point(6, 36);
+            this.rBCv.Name = "rBCv";
+            this.rBCv.Size = new System.Drawing.Size(57, 26);
+            this.rBCv.TabIndex = 0;
+            this.rBCv.TabStop = true;
+            this.rBCv.Text = "Cv";
+            this.rBCv.UseVisualStyleBackColor = true;
+            // 
             // panel4
             // 
-            this.panel4.Controls.Add(this.label14);
-            this.panel4.Location = new System.Drawing.Point(218, 536);
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(238)))));
+            this.panel4.Controls.Add(this.lblFlowResult);
+            this.panel4.Location = new System.Drawing.Point(374, 524);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(300, 50);
+            this.panel4.Size = new System.Drawing.Size(268, 50);
             this.panel4.TabIndex = 28;
             // 
-            // label14
+            // lblFlowResult
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label14.ForeColor = System.Drawing.Color.Black;
-            this.label14.Location = new System.Drawing.Point(20, 14);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(66, 22);
-            this.label14.TabIndex = 29;
-            this.label14.Text = "Result:";
+            this.lblFlowResult.AutoSize = true;
+            this.lblFlowResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblFlowResult.ForeColor = System.Drawing.Color.Black;
+            this.lblFlowResult.Location = new System.Drawing.Point(20, 14);
+            this.lblFlowResult.Name = "lblFlowResult";
+            this.lblFlowResult.Size = new System.Drawing.Size(53, 22);
+            this.lblFlowResult.TabIndex = 29;
+            this.lblFlowResult.Text = "Cv = ";
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(218, 478);
+            this.button1.Location = new System.Drawing.Point(218, 522);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(150, 52);
             this.button1.TabIndex = 27;
             this.button1.Text = "Calculate";
             this.button1.UseVisualStyleBackColor = true;
             // 
-            // textBox7
-            // 
-            this.textBox7.Location = new System.Drawing.Point(475, 411);
-            this.textBox7.Name = "textBox7";
-            this.textBox7.Size = new System.Drawing.Size(150, 31);
-            this.textBox7.TabIndex = 26;
-            // 
             // textBox6
             // 
-            this.textBox6.Location = new System.Drawing.Point(218, 411);
+            this.textBox6.Location = new System.Drawing.Point(218, 455);
             this.textBox6.Name = "textBox6";
             this.textBox6.Size = new System.Drawing.Size(150, 31);
             this.textBox6.TabIndex = 25;
             // 
-            // label13
+            // lblUnitName
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label13.ForeColor = System.Drawing.Color.Black;
-            this.label13.Location = new System.Drawing.Point(426, 416);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(32, 22);
-            this.label13.TabIndex = 24;
-            this.label13.Text = "Cv";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label12.ForeColor = System.Drawing.Color.Black;
-            this.label12.Location = new System.Drawing.Point(37, 416);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(91, 22);
-            this.label12.TabIndex = 23;
-            this.label12.Text = "Flow Rate";
+            this.lblUnitName.AutoSize = true;
+            this.lblUnitName.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblUnitName.ForeColor = System.Drawing.Color.Black;
+            this.lblUnitName.Location = new System.Drawing.Point(37, 460);
+            this.lblUnitName.Name = "lblUnitName";
+            this.lblUnitName.Size = new System.Drawing.Size(91, 22);
+            this.lblUnitName.TabIndex = 23;
+            this.lblUnitName.Text = "Flow Rate";
             // 
             // textBox5
             // 
-            this.textBox5.Location = new System.Drawing.Point(218, 361);
+            this.textBox5.Location = new System.Drawing.Point(218, 405);
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(82, 31);
             this.textBox5.TabIndex = 22;
             // 
-            // comboBox7
+            // cBOutPressUnit
             // 
-            this.comboBox7.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox7.FormattingEnabled = true;
-            this.comboBox7.Location = new System.Drawing.Point(306, 311);
-            this.comboBox7.Name = "comboBox7";
-            this.comboBox7.Size = new System.Drawing.Size(94, 33);
-            this.comboBox7.TabIndex = 21;
+            this.cBOutPressUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBOutPressUnit.FormattingEnabled = true;
+            this.cBOutPressUnit.Location = new System.Drawing.Point(306, 355);
+            this.cBOutPressUnit.Name = "cBOutPressUnit";
+            this.cBOutPressUnit.Size = new System.Drawing.Size(94, 33);
+            this.cBOutPressUnit.TabIndex = 21;
             // 
             // textBox4
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 311);
+            this.textBox4.Location = new System.Drawing.Point(218, 355);
             this.textBox4.Name = "textBox4";
             this.textBox4.Size = new System.Drawing.Size(82, 31);
             this.textBox4.TabIndex = 20;
             // 
-            // comboBox6
+            // cBInPressUnit
             // 
-            this.comboBox6.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox6.FormattingEnabled = true;
-            this.comboBox6.Location = new System.Drawing.Point(306, 261);
-            this.comboBox6.Name = "comboBox6";
-            this.comboBox6.Size = new System.Drawing.Size(94, 33);
-            this.comboBox6.TabIndex = 19;
+            this.cBInPressUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBInPressUnit.FormattingEnabled = true;
+            this.cBInPressUnit.Location = new System.Drawing.Point(306, 305);
+            this.cBInPressUnit.Name = "cBInPressUnit";
+            this.cBInPressUnit.Size = new System.Drawing.Size(94, 33);
+            this.cBInPressUnit.TabIndex = 19;
             // 
             // textBox3
             // 
-            this.textBox3.Location = new System.Drawing.Point(218, 261);
+            this.textBox3.Location = new System.Drawing.Point(218, 305);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(82, 31);
             this.textBox3.TabIndex = 18;
             // 
-            // comboBox5
+            // cBMedium
             // 
-            this.comboBox5.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox5.FormattingEnabled = true;
-            this.comboBox5.Location = new System.Drawing.Point(218, 211);
-            this.comboBox5.Name = "comboBox5";
-            this.comboBox5.Size = new System.Drawing.Size(182, 33);
-            this.comboBox5.TabIndex = 17;
+            this.cBMedium.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBMedium.FormattingEnabled = true;
+            this.cBMedium.Location = new System.Drawing.Point(218, 255);
+            this.cBMedium.Name = "cBMedium";
+            this.cBMedium.Size = new System.Drawing.Size(182, 33);
+            this.cBMedium.TabIndex = 17;
             // 
-            // comboBox4
+            // cBTempUnit
             // 
-            this.comboBox4.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(306, 166);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(94, 33);
-            this.comboBox4.TabIndex = 16;
+            this.cBTempUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBTempUnit.FormattingEnabled = true;
+            this.cBTempUnit.Items.AddRange(new object[] {
+            "°C",
+            "°F"});
+            this.cBTempUnit.Location = new System.Drawing.Point(306, 210);
+            this.cBTempUnit.Name = "cBTempUnit";
+            this.cBTempUnit.Size = new System.Drawing.Size(94, 33);
+            this.cBTempUnit.TabIndex = 16;
             // 
             // textBox2
             // 
-            this.textBox2.Location = new System.Drawing.Point(218, 166);
+            this.textBox2.Location = new System.Drawing.Point(218, 210);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(82, 31);
             this.textBox2.TabIndex = 15;
             // 
-            // comboBox3
+            // cBMediumType
             // 
-            this.comboBox3.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(218, 111);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(182, 33);
-            this.comboBox3.TabIndex = 14;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.MenuBar;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(218, 61);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(182, 33);
-            this.comboBox2.TabIndex = 13;
+            this.cBMediumType.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBMediumType.FormattingEnabled = true;
+            this.cBMediumType.Items.AddRange(new object[] {
+            "Liquid",
+            "Gas"});
+            this.cBMediumType.Location = new System.Drawing.Point(218, 155);
+            this.cBMediumType.Name = "cBMediumType";
+            this.cBMediumType.Size = new System.Drawing.Size(182, 33);
+            this.cBMediumType.TabIndex = 14;
+            this.cBMediumType.SelectedIndexChanged += new System.EventHandler(this.cBMediumType_SelectedIndexChanged);
             // 
             // label11
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label11.ForeColor = System.Drawing.Color.Black;
-            this.label11.Location = new System.Drawing.Point(37, 116);
+            this.label11.Location = new System.Drawing.Point(37, 160);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(118, 22);
             this.label11.TabIndex = 12;
@@ -349,7 +375,7 @@
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label10.ForeColor = System.Drawing.Color.Black;
-            this.label10.Location = new System.Drawing.Point(37, 166);
+            this.label10.Location = new System.Drawing.Point(37, 210);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(113, 22);
             this.label10.TabIndex = 11;
@@ -360,7 +386,7 @@
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label9.ForeColor = System.Drawing.Color.Black;
-            this.label9.Location = new System.Drawing.Point(37, 216);
+            this.label9.Location = new System.Drawing.Point(37, 260);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(72, 22);
             this.label9.TabIndex = 10;
@@ -371,7 +397,7 @@
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label8.ForeColor = System.Drawing.Color.Black;
-            this.label8.Location = new System.Drawing.Point(37, 266);
+            this.label8.Location = new System.Drawing.Point(37, 310);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(120, 22);
             this.label8.TabIndex = 9;
@@ -382,7 +408,7 @@
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label7.ForeColor = System.Drawing.Color.Black;
-            this.label7.Location = new System.Drawing.Point(37, 316);
+            this.label7.Location = new System.Drawing.Point(37, 360);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(135, 22);
             this.label7.TabIndex = 8;
@@ -393,22 +419,11 @@
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.label6.ForeColor = System.Drawing.Color.Black;
-            this.label6.Location = new System.Drawing.Point(37, 366);
+            this.label6.Location = new System.Drawing.Point(37, 410);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(67, 22);
             this.label6.TabIndex = 7;
             this.label6.Text = "Gravity";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.ForeColor = System.Drawing.Color.Black;
-            this.label5.Location = new System.Drawing.Point(37, 66);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 22);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Calculation Type";
             // 
             // label4
             // 
@@ -436,6 +451,8 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             this.ResumeLayout(false);
@@ -452,31 +469,31 @@
         private Label lblResult1;
         private Label label2;
         private Panel panel3;
-        private ComboBox comboBox2;
         private Label label11;
         private Label label10;
         private Label label9;
         private Label label8;
         private Label label7;
         private Label label6;
-        private Label label5;
         private Label label4;
-        private Label label12;
+        private Label lblUnitName;
         private TextBox textBox5;
-        private ComboBox comboBox7;
+        private ComboBox cBOutPressUnit;
         private TextBox textBox4;
-        private ComboBox comboBox6;
+        private ComboBox cBInPressUnit;
         private TextBox textBox3;
-        private ComboBox comboBox5;
-        private ComboBox comboBox4;
+        private ComboBox cBMedium;
+        private ComboBox cBTempUnit;
         private TextBox textBox2;
-        private ComboBox comboBox3;
+        private ComboBox cBMediumType;
         private Panel panel4;
-        private Label label14;
+        private Label lblFlowResult;
         private Button button1;
-        private TextBox textBox7;
         private TextBox textBox6;
-        private Label label13;
         private Button btnCalculateOrifice;
+        private GroupBox groupBox1;
+        private RadioButton rBFlow;
+        private RadioButton rBCv;
+        private Label lblUnitFlow;
     }
 }
