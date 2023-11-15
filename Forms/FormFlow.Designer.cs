@@ -46,7 +46,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.textBox6 = new System.Windows.Forms.TextBox();
             this.lblUnitName = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tBoxGravity = new System.Windows.Forms.TextBox();
             this.cBOutPressUnit = new System.Windows.Forms.ComboBox();
             this.textBox4 = new System.Windows.Forms.TextBox();
             this.cBInPressUnit = new System.Windows.Forms.ComboBox();
@@ -62,6 +62,7 @@
             this.label7 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
+            this.btnClear = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -129,6 +130,7 @@
             // comboBoxCvKvOr
             // 
             this.comboBoxCvKvOr.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.comboBoxCvKvOr.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.comboBoxCvKvOr.FormattingEnabled = true;
             this.comboBoxCvKvOr.Items.AddRange(new object[] {
             "Cv to Kv and orifice",
@@ -138,7 +140,6 @@
             this.comboBoxCvKvOr.Name = "comboBoxCvKvOr";
             this.comboBoxCvKvOr.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCvKvOr.TabIndex = 2;
-            this.comboBoxCvKvOr.Text = "Make a selection";
             // 
             // txtValueToCalc
             // 
@@ -166,7 +167,7 @@
             this.panel3.Controls.Add(this.button1);
             this.panel3.Controls.Add(this.textBox6);
             this.panel3.Controls.Add(this.lblUnitName);
-            this.panel3.Controls.Add(this.textBox5);
+            this.panel3.Controls.Add(this.tBoxGravity);
             this.panel3.Controls.Add(this.cBOutPressUnit);
             this.panel3.Controls.Add(this.textBox4);
             this.panel3.Controls.Add(this.cBInPressUnit);
@@ -279,17 +280,23 @@
             this.lblUnitName.TabIndex = 23;
             this.lblUnitName.Text = "Flow Rate";
             // 
-            // textBox5
+            // tBoxGravity
             // 
-            this.textBox5.Location = new System.Drawing.Point(218, 405);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(82, 31);
-            this.textBox5.TabIndex = 22;
+            this.tBoxGravity.BackColor = System.Drawing.SystemColors.Menu;
+            this.tBoxGravity.Enabled = false;
+            this.tBoxGravity.Location = new System.Drawing.Point(218, 405);
+            this.tBoxGravity.Name = "tBoxGravity";
+            this.tBoxGravity.Size = new System.Drawing.Size(82, 31);
+            this.tBoxGravity.TabIndex = 22;
             // 
             // cBOutPressUnit
             // 
             this.cBOutPressUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBOutPressUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBOutPressUnit.FormattingEnabled = true;
+            this.cBOutPressUnit.Items.AddRange(new object[] {
+            "PSIA",
+            "bar"});
             this.cBOutPressUnit.Location = new System.Drawing.Point(306, 355);
             this.cBOutPressUnit.Name = "cBOutPressUnit";
             this.cBOutPressUnit.Size = new System.Drawing.Size(94, 33);
@@ -305,7 +312,11 @@
             // cBInPressUnit
             // 
             this.cBInPressUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBInPressUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBInPressUnit.FormattingEnabled = true;
+            this.cBInPressUnit.Items.AddRange(new object[] {
+            "PSIA",
+            "bar"});
             this.cBInPressUnit.Location = new System.Drawing.Point(306, 305);
             this.cBInPressUnit.Name = "cBInPressUnit";
             this.cBInPressUnit.Size = new System.Drawing.Size(94, 33);
@@ -321,15 +332,18 @@
             // cBMedium
             // 
             this.cBMedium.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBMedium.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBMedium.FormattingEnabled = true;
             this.cBMedium.Location = new System.Drawing.Point(218, 255);
             this.cBMedium.Name = "cBMedium";
             this.cBMedium.Size = new System.Drawing.Size(182, 33);
             this.cBMedium.TabIndex = 17;
+            this.cBMedium.SelectedIndexChanged += new System.EventHandler(this.cBMedium_SelectedIndexChanged);
             // 
             // cBTempUnit
             // 
             this.cBTempUnit.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBTempUnit.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBTempUnit.FormattingEnabled = true;
             this.cBTempUnit.Items.AddRange(new object[] {
             "°C",
@@ -349,6 +363,7 @@
             // cBMediumType
             // 
             this.cBMediumType.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBMediumType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cBMediumType.FormattingEnabled = true;
             this.cBMediumType.Items.AddRange(new object[] {
             "Liquid",
@@ -436,11 +451,21 @@
             this.label4.TabIndex = 5;
             this.label4.Text = "Detailed Flow Calculation";
             // 
+            // btnClear
+            // 
+            this.btnClear.Location = new System.Drawing.Point(688, 524);
+            this.btnClear.Name = "btnClear";
+            this.btnClear.Size = new System.Drawing.Size(66, 52);
+            this.btnClear.TabIndex = 31;
+            this.btnClear.Text = "Clear";
+            this.btnClear.UseVisualStyleBackColor = true;
+            // 
             // FormFlow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1000, 634);
+            this.Controls.Add(this.btnClear);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel1);
             this.Name = "FormFlow";
@@ -477,7 +502,7 @@
         private Label label6;
         private Label label4;
         private Label lblUnitName;
-        private TextBox textBox5;
+        private TextBox tBoxGravity;
         private ComboBox cBOutPressUnit;
         private TextBox textBox4;
         private ComboBox cBInPressUnit;
@@ -495,5 +520,6 @@
         private RadioButton rBFlow;
         private RadioButton rBCv;
         private Label lblUnitFlow;
+        private Button btnClear;
     }
 }

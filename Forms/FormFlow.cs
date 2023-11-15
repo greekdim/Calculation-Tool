@@ -1,4 +1,5 @@
-﻿using Calc_Tool___Rev_A.ClassesCalculs;
+﻿using Calc_Tool___Rev_A.Classes;
+using Calc_Tool___Rev_A.ClassesCalculs;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -83,6 +84,7 @@ namespace Calc_Tool___Rev_A.Forms
 
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
+
             // Vérifier lequel des RadioButtons est coché
             if (rBCv.Checked)
             {
@@ -103,8 +105,10 @@ namespace Calc_Tool___Rev_A.Forms
         private void cBMediumType_SelectedIndexChanged(object sender, EventArgs e)
         {
             cBMedium.Items.Clear();
+            cBMedium.Text = "";
+            tBoxGravity.Text = "";
             // Ajoute les éléments appropriés en fonction de la sélection de la première ComboBox
-            switch(cBMediumType.SelectedItem.ToString())
+            switch (cBMediumType.SelectedItem.ToString())
             {
                 case "Liquid":
                     cBMedium.Items.AddRange(new string[] { "Water", "Oil, Mineral", "Oil, Vegetable", "Glycerin", "Alcohol, Ethyl" });
@@ -120,6 +124,14 @@ namespace Calc_Tool___Rev_A.Forms
             }
 
 
+        }
+
+        FlowCalculator calc;
+        private void cBMedium_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            calc = new FlowCalculator(cBMedium.Text);
+            calc.SetTextG(out double G);
+            tBoxGravity.Text = G.ToString();
         }
     }
 }
