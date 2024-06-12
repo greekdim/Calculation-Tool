@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCalculateOrifice = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
@@ -63,6 +64,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
+            this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -140,6 +142,7 @@
             this.comboBoxCvKvOr.Name = "comboBoxCvKvOr";
             this.comboBoxCvKvOr.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCvKvOr.TabIndex = 2;
+            this.comboBoxCvKvOr.SelectedIndexChanged += new System.EventHandler(this.comboBoxCvKvOr_SelectedIndexChanged);
             // 
             // txtValueToCalc
             // 
@@ -301,6 +304,7 @@
             this.cBOutPressUnit.Name = "cBOutPressUnit";
             this.cBOutPressUnit.Size = new System.Drawing.Size(94, 33);
             this.cBOutPressUnit.TabIndex = 21;
+            this.toolTip1.SetToolTip(this.cBOutPressUnit, "Enter absolute pressure value");
             // 
             // textBox4
             // 
@@ -321,6 +325,7 @@
             this.cBInPressUnit.Name = "cBInPressUnit";
             this.cBInPressUnit.Size = new System.Drawing.Size(94, 33);
             this.cBInPressUnit.TabIndex = 19;
+            this.toolTip1.SetToolTip(this.cBInPressUnit, "Enter absolute pressure value");
             // 
             // textBox3
             // 
@@ -459,6 +464,7 @@
             this.btnClear.TabIndex = 31;
             this.btnClear.Text = "Clear";
             this.btnClear.UseVisualStyleBackColor = true;
+            this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
             // FormFlow
             // 
@@ -521,5 +527,6 @@
         private RadioButton rBCv;
         private Label lblUnitFlow;
         private Button btnClear;
+        private ToolTip toolTip1;
     }
 }

@@ -158,5 +158,17 @@ namespace Calc_Tool___Rev_A.Forms
             calc.SetTextG(out double G);
             tBoxGravity.Text = G.ToString();
         }
+
+        private void comboBoxCvKvOr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Réinitialiser les valeurs des contrôles
+            lblResult1.Text = string.Empty;
+            txtValueToCalc.Text = string.Empty;
+        }
+
+        private void btnClear_Click(object sender, EventArgs e)
+        {
+            ClearFormControls(this.Controls);
+        }
     }
 }
