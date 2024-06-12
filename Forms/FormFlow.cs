@@ -35,6 +35,8 @@ namespace Calc_Tool___Rev_A.Forms
         //
         // Calculs Cv Kv Orifice
         //
+
+
         private void btnCalculateOrifice_Click(object sender, EventArgs e)
         {
             // Vérifier si une option est sélectionnée dans la ComboBox
@@ -82,11 +84,8 @@ namespace Calc_Tool___Rev_A.Forms
         // Calculs Débit - Cv or Flow
         //
 
-        
-        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        private void SetFlowResultLabel()
         {
-            ClearFormControls(this.Controls);
-            // Vérifier lequel des RadioButtons est coché
             if (rBCv.Checked)
             {
                 // Afficher le texte de rBCv dans le label
@@ -99,8 +98,30 @@ namespace Calc_Tool___Rev_A.Forms
                 // Afficher le texte de rBFlow dans le label
                 lblFlowResult.Text = rBFlow.Text + " =";
                 lblUnitFlow.Text = "";
-                lblUnitName.Text= rBCv.Text ;
+                lblUnitName.Text = rBCv.Text;
             }
+        }
+
+        private void RadioButton_CheckedChanged(object sender, EventArgs e)
+        {
+            ClearFormControls(this.Controls);
+            // Vérifier lequel des RadioButtons est coché
+            SetFlowResultLabel();
+
+            /*if (rBCv.Checked)
+            {
+                // Afficher le texte de rBCv dans le label
+                lblFlowResult.Text = rBCv.Text + " =";
+                lblUnitFlow.Text = "";
+                lblUnitName.Text = rBFlow.Text;
+            }
+            else if (rBFlow.Checked)
+            {
+                // Afficher le texte de rBFlow dans le label
+                lblFlowResult.Text = rBFlow.Text + " =";
+                lblUnitFlow.Text = "";
+                lblUnitName.Text= rBCv.Text ;
+            }*/
         }
 
         // Fonction pour clear. 
@@ -166,9 +187,78 @@ namespace Calc_Tool___Rev_A.Forms
             txtValueToCalc.Text = string.Empty;
         }
 
+
+
+        private void btnCalcFlow_Click(object sender, EventArgs e)
+        {
+            errorProvider1.Clear();
+
+
+            try
+            {
+                double T;
+                if (cBTempUnit.SelectedItem.ToString() == "°C")
+                {
+                    T = ParseDouble(txtTemp.Text);
+                }
+                else // "°F" selected
+                {
+                    double tempF = ParseDouble(txtTemp.Text);
+                    T = (tempF - 32) * 5 / 9; // Conversion de °F à °C
+                }
+                
+                double P1 = ParseDouble(txtPin.Text);
+                double P2 = ParseDouble(txtPout.Text);
+                double G = Double.Parse(tBoxGravity.Text);
+                double val = ParseDouble(txtFlowInitial.Text);
+
+                // Convertir les pressions en bars si PSIA est sélectionné
+                if (cBInPressUnit.Text == "PSIA")
+                {
+                    P1 /= 14.503768; // Convertir PSIA en bar
+                }
+                if (cBOutPressUnit.Text == "PSIA")
+                {
+                    P2 /= 14.503768; // Convertir PSIA en bar
+                }
+
+                calc = new FlowCalculator(rBCv.Checked, cBMediumType.Text, T, P1, P2, G, val);
+
+                CalculationTypeFlow calcType = calc.GiveResult(out double result);
+                switch (calcType)
+                {
+                    case CalculationTypeFlow.Cv:
+                        lblFlowResult.Text = "Cv = " + ((float)result).ToString("F3");
+                        break;
+                    case CalculationTypeFlow.Flowliquid:
+                        lblFlowResult.Text = "Flow = " + ((float)result).ToString("F3") + " L/min";
+                        break;
+                    case CalculationTypeFlow.FlowGas:
+                        lblFlowResult.Text = "Flow = " + ((float)result).ToString("F3") + " NL/min";
+                        break;
+                }
+            }
+            catch
+            {
+                errorProvider1.SetError(btnCalcFlow, "Check the variables");
+            }
+        }
+
+
+
+        private double ParseDouble(string input)
+        {
+            // Remplacer les virgules par des points avant de convertir en double
+            string cleanedInput = input.Replace('.', ',');
+            return Double.Parse(cleanedInput);
+        }
+
         private void btnClear_Click(object sender, EventArgs e)
         {
             ClearFormControls(this.Controls);
+            SetFlowResultLabel();
         }
+
+
     }
 }

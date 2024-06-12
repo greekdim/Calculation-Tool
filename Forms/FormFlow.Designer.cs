@@ -44,17 +44,17 @@
             this.rBCv = new System.Windows.Forms.RadioButton();
             this.panel4 = new System.Windows.Forms.Panel();
             this.lblFlowResult = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.btnCalcFlow = new System.Windows.Forms.Button();
+            this.txtFlowInitial = new System.Windows.Forms.TextBox();
             this.lblUnitName = new System.Windows.Forms.Label();
             this.tBoxGravity = new System.Windows.Forms.TextBox();
             this.cBOutPressUnit = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.txtPout = new System.Windows.Forms.TextBox();
             this.cBInPressUnit = new System.Windows.Forms.ComboBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txtPin = new System.Windows.Forms.TextBox();
             this.cBMedium = new System.Windows.Forms.ComboBox();
             this.cBTempUnit = new System.Windows.Forms.ComboBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.txtTemp = new System.Windows.Forms.TextBox();
             this.cBMediumType = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -65,11 +65,13 @@
             this.label4 = new System.Windows.Forms.Label();
             this.btnClear = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -167,17 +169,17 @@
             this.panel3.Controls.Add(this.lblUnitFlow);
             this.panel3.Controls.Add(this.groupBox1);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.button1);
-            this.panel3.Controls.Add(this.textBox6);
+            this.panel3.Controls.Add(this.btnCalcFlow);
+            this.panel3.Controls.Add(this.txtFlowInitial);
             this.panel3.Controls.Add(this.lblUnitName);
             this.panel3.Controls.Add(this.tBoxGravity);
             this.panel3.Controls.Add(this.cBOutPressUnit);
-            this.panel3.Controls.Add(this.textBox4);
+            this.panel3.Controls.Add(this.txtPout);
             this.panel3.Controls.Add(this.cBInPressUnit);
-            this.panel3.Controls.Add(this.textBox3);
+            this.panel3.Controls.Add(this.txtPin);
             this.panel3.Controls.Add(this.cBMedium);
             this.panel3.Controls.Add(this.cBTempUnit);
-            this.panel3.Controls.Add(this.textBox2);
+            this.panel3.Controls.Add(this.txtTemp);
             this.panel3.Controls.Add(this.cBMediumType);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Controls.Add(this.label10);
@@ -256,21 +258,22 @@
             this.lblFlowResult.TabIndex = 29;
             this.lblFlowResult.Text = "Cv = ";
             // 
-            // button1
+            // btnCalcFlow
             // 
-            this.button1.Location = new System.Drawing.Point(218, 522);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(150, 52);
-            this.button1.TabIndex = 27;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btnCalcFlow.Location = new System.Drawing.Point(218, 522);
+            this.btnCalcFlow.Name = "btnCalcFlow";
+            this.btnCalcFlow.Size = new System.Drawing.Size(150, 52);
+            this.btnCalcFlow.TabIndex = 27;
+            this.btnCalcFlow.Text = "Calculate";
+            this.btnCalcFlow.UseVisualStyleBackColor = true;
+            this.btnCalcFlow.Click += new System.EventHandler(this.btnCalcFlow_Click);
             // 
-            // textBox6
+            // txtFlowInitial
             // 
-            this.textBox6.Location = new System.Drawing.Point(218, 455);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(150, 31);
-            this.textBox6.TabIndex = 25;
+            this.txtFlowInitial.Location = new System.Drawing.Point(218, 455);
+            this.txtFlowInitial.Name = "txtFlowInitial";
+            this.txtFlowInitial.Size = new System.Drawing.Size(150, 31);
+            this.txtFlowInitial.TabIndex = 25;
             // 
             // lblUnitName
             // 
@@ -306,12 +309,12 @@
             this.cBOutPressUnit.TabIndex = 21;
             this.toolTip1.SetToolTip(this.cBOutPressUnit, "Enter absolute pressure value");
             // 
-            // textBox4
+            // txtPout
             // 
-            this.textBox4.Location = new System.Drawing.Point(218, 355);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(82, 31);
-            this.textBox4.TabIndex = 20;
+            this.txtPout.Location = new System.Drawing.Point(218, 355);
+            this.txtPout.Name = "txtPout";
+            this.txtPout.Size = new System.Drawing.Size(82, 31);
+            this.txtPout.TabIndex = 20;
             // 
             // cBInPressUnit
             // 
@@ -327,12 +330,12 @@
             this.cBInPressUnit.TabIndex = 19;
             this.toolTip1.SetToolTip(this.cBInPressUnit, "Enter absolute pressure value");
             // 
-            // textBox3
+            // txtPin
             // 
-            this.textBox3.Location = new System.Drawing.Point(218, 305);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(82, 31);
-            this.textBox3.TabIndex = 18;
+            this.txtPin.Location = new System.Drawing.Point(218, 305);
+            this.txtPin.Name = "txtPin";
+            this.txtPin.Size = new System.Drawing.Size(82, 31);
+            this.txtPin.TabIndex = 18;
             // 
             // cBMedium
             // 
@@ -358,12 +361,12 @@
             this.cBTempUnit.Size = new System.Drawing.Size(94, 33);
             this.cBTempUnit.TabIndex = 16;
             // 
-            // textBox2
+            // txtTemp
             // 
-            this.textBox2.Location = new System.Drawing.Point(218, 210);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(82, 31);
-            this.textBox2.TabIndex = 15;
+            this.txtTemp.Location = new System.Drawing.Point(218, 210);
+            this.txtTemp.Name = "txtTemp";
+            this.txtTemp.Size = new System.Drawing.Size(82, 31);
+            this.txtTemp.TabIndex = 15;
             // 
             // cBMediumType
             // 
@@ -466,6 +469,10 @@
             this.btnClear.UseVisualStyleBackColor = true;
             this.btnClear.Click += new System.EventHandler(this.btnClear_Click);
             // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
+            // 
             // FormFlow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -486,6 +493,7 @@
             this.groupBox1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -510,17 +518,17 @@
         private Label lblUnitName;
         private TextBox tBoxGravity;
         private ComboBox cBOutPressUnit;
-        private TextBox textBox4;
+        private TextBox txtPout;
         private ComboBox cBInPressUnit;
-        private TextBox textBox3;
+        private TextBox txtPin;
         private ComboBox cBMedium;
         private ComboBox cBTempUnit;
-        private TextBox textBox2;
+        private TextBox txtTemp;
         private ComboBox cBMediumType;
         private Panel panel4;
         private Label lblFlowResult;
-        private Button button1;
-        private TextBox textBox6;
+        private Button btnCalcFlow;
+        private TextBox txtFlowInitial;
         private Button btnCalculateOrifice;
         private GroupBox groupBox1;
         private RadioButton rBFlow;
@@ -528,5 +536,6 @@
         private Label lblUnitFlow;
         private Button btnClear;
         private ToolTip toolTip1;
+        private ErrorProvider errorProvider1;
     }
 }
