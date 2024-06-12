@@ -44,5 +44,7 @@ namespace Calc_Tool___Rev_A.Classes
             else
                 result = 1.38;
         }
+
+
     }
 }

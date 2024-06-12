@@ -82,9 +82,10 @@ namespace Calc_Tool___Rev_A.Forms
         // Calculs Débit - Cv or Flow
         //
 
+        
         private void RadioButton_CheckedChanged(object sender, EventArgs e)
         {
-
+            ClearFormControls(this.Controls);
             // Vérifier lequel des RadioButtons est coché
             if (rBCv.Checked)
             {
@@ -102,31 +103,55 @@ namespace Calc_Tool___Rev_A.Forms
             }
         }
 
+        // Fonction pour clear. 
+        private void ClearFormControls(System.Windows.Forms.Control.ControlCollection controls)
+        {
+            foreach (System.Windows.Forms.Control control in controls)
+            {
+                if (control is System.Windows.Forms.TextBox textBox)
+                {
+                    textBox.Text = "";
+                }
+                else if (control is System.Windows.Forms.ComboBox comboBox)
+                {
+                    comboBox.SelectedIndex = -1;
+                }
+                else if (control.HasChildren)
+                {
+                    ClearFormControls(control.Controls);
+                }
+                
+            }
+        }
+
         private void cBMediumType_SelectedIndexChanged(object sender, EventArgs e)
         {
             cBMedium.Items.Clear();
             cBMedium.Text = "";
             tBoxGravity.Text = "";
             // Ajoute les éléments appropriés en fonction de la sélection de la première ComboBox
-            switch (cBMediumType.SelectedItem.ToString())
+            // Le if sert a vérifier que l'item séléctionnée est != de null. Si on l'utilise pas, on ne peut pas clear.
+            if (cBMediumType.SelectedItem != null)
             {
-                case "Liquid":
-                    cBMedium.Items.AddRange(new string[] { "Water", "Oil, Mineral", "Oil, Vegetable", "Glycerin", "Alcohol, Ethyl" });
-                    if (rBCv.Checked)
-                        lblUnitFlow.Text = "L/min";
-                    break;
-                case "Gas":
-                    cBMedium.Items.AddRange(new string[] { "Air", "Oxygen", "Carbon dioxide", "Argon" });
-                    if (rBCv.Checked)
-                        lblUnitFlow.Text = "NL/min";
-                    break;
-
+                switch (cBMediumType.SelectedItem.ToString())
+                {
+                    case "Liquid":
+                        cBMedium.Items.AddRange(new string[] { "Water", "Oil, Mineral", "Oil, Vegetable", "Glycerin", "Alcohol, Ethyl" });
+                        if (rBCv.Checked)
+                            lblUnitFlow.Text = "L/min";
+                        break;
+                    case "Gas":
+                        cBMedium.Items.AddRange(new string[] { "Air", "Oxygen", "Carbon dioxide", "Argon" });
+                        if (rBCv.Checked)
+                            lblUnitFlow.Text = "NL/min";
+                        break;
+                }
             }
 
 
         }
-
         FlowCalculator calc;
+
         private void cBMedium_SelectedIndexChanged(object sender, EventArgs e)
         {
             calc = new FlowCalculator(cBMedium.Text);
