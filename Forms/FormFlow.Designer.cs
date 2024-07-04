@@ -260,12 +260,13 @@
             // 
             // btnCalcFlow
             // 
+            this.btnCalcFlow.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCalcFlow.Location = new System.Drawing.Point(218, 522);
             this.btnCalcFlow.Name = "btnCalcFlow";
             this.btnCalcFlow.Size = new System.Drawing.Size(150, 52);
             this.btnCalcFlow.TabIndex = 27;
             this.btnCalcFlow.Text = "Calculate";
-            this.btnCalcFlow.UseVisualStyleBackColor = true;
+            this.btnCalcFlow.UseVisualStyleBackColor = false;
             this.btnCalcFlow.Click += new System.EventHandler(this.btnCalcFlow_Click);
             // 
             // txtFlowInitial
