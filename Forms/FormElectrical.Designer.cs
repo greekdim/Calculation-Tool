@@ -184,6 +184,7 @@
             this.btnCalcOhmLaw.TabIndex = 28;
             this.btnCalcOhmLaw.Text = "Calculate";
             this.btnCalcOhmLaw.UseVisualStyleBackColor = false;
+            this.btnCalcOhmLaw.Click += new System.EventHandler(this.btnCalcOhmLaw_Click);
             // 
             // btnClearOhmLaw
             // 
@@ -193,6 +194,7 @@
             this.btnClearOhmLaw.TabIndex = 29;
             this.btnClearOhmLaw.Text = "Clear";
             this.btnClearOhmLaw.UseVisualStyleBackColor = true;
+            this.btnClearOhmLaw.Click += new System.EventHandler(this.btnClearOhmLaw_Click);
             // 
             // FormElectrical
             // 
