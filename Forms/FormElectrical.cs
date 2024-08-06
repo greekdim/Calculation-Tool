@@ -8,6 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Globalization;
 
 namespace Calc_Tool___Rev_A.Forms
 {
@@ -65,16 +66,21 @@ namespace Calc_Tool___Rev_A.Forms
                 conversion.Calculate();
 
                 // Affichage des résultats dans les textboxes
-                txtVoltage.Text = conversion.Voltage?.ToString("F2");
-                txtCurrent.Text = conversion.Current?.ToString("F2");
-                txtR.Text = conversion.Resistance?.ToString("F2");
-                txtWattage.Text = conversion.Power?.ToString("F2");
+                //txtVoltage.Text = conversion.Voltage?.ToString("F2");
+                //txtCurrent.Text = conversion.Current?.ToString("F2");
+                // txtR.Text = conversion.Resistance?.ToString("F2");
+                //txtWattage.Text = conversion.Power?.ToString("F2");
+                txtVoltage.Text = FormatNumber(conversion.Voltage);
+                txtCurrent.Text = FormatNumber(conversion.Current);
+                txtR.Text = FormatNumber(conversion.Resistance);
+                txtWattage.Text = FormatNumber(conversion.Power);
 
                 // Désactiver les textboxes qui ne sont pas utilisées
                 txtVoltage.Enabled = !conversion.Voltage.HasValue;
                 txtCurrent.Enabled = !conversion.Current.HasValue;
                 txtR.Enabled = !conversion.Resistance.HasValue;
                 txtWattage.Enabled = !conversion.Power.HasValue;
+
 
                 // Mettre à jour l'état des textboxes après le calcul
                 //UpdateTextBoxStates();
@@ -94,6 +100,23 @@ namespace Calc_Tool___Rev_A.Forms
             UpdateTextBoxStates();
         }
 
+        /* private double? ParseDouble(string text)
+         {
+             if (string.IsNullOrWhiteSpace(text))
+             {
+                 return null;
+             }
+
+             // Remplacer la virgule par le point pour assurer une conversion correcte
+             text = text.Replace(',', '.');
+
+             if (double.TryParse(text, out double result))
+             {
+                 return result;
+             }
+             return null;
+         }
+        */
         private double? ParseDouble(string text)
         {
             if (string.IsNullOrWhiteSpace(text))
@@ -104,11 +127,19 @@ namespace Calc_Tool___Rev_A.Forms
             // Remplacer la virgule par le point pour assurer une conversion correcte
             text = text.Replace(',', '.');
 
-            if (double.TryParse(text, out double result))
+            if (double.TryParse(text, NumberStyles.Float, CultureInfo.InvariantCulture, out double result))
             {
                 return result;
             }
             return null;
+        }
+
+        private string FormatNumber(double? number)
+        {
+            if (!number.HasValue) return string.Empty;
+
+            // Affiche les nombres entiers sans décimales, les autres avec deux décimales
+            return (number % 1 == 0) ? number.Value.ToString("F0") : number.Value.ToString("F2");
         }
 
 
