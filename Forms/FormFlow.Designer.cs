@@ -371,8 +371,9 @@
             // 
             // cBMediumType
             // 
-            this.cBMediumType.BackColor = System.Drawing.SystemColors.MenuBar;
+            this.cBMediumType.BackColor = System.Drawing.SystemColors.Menu;
             this.cBMediumType.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.cBMediumType.ForeColor = System.Drawing.SystemColors.WindowText;
             this.cBMediumType.FormattingEnabled = true;
             this.cBMediumType.Items.AddRange(new object[] {
             "Liquid",
