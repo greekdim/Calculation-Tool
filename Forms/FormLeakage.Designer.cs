@@ -132,11 +132,11 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(644, 70);
+            this.label1.Location = new System.Drawing.Point(579, 69);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(82, 25);
+            this.label1.Size = new System.Drawing.Size(147, 25);
             this.label1.TabIndex = 6;
-            this.label1.Text = "Pressure:";
+            this.label1.Text = "Relative Pressure:";
             // 
             // label2
             // 
@@ -174,6 +174,7 @@
             this.btnCalcLeak1.TabIndex = 10;
             this.btnCalcLeak1.Text = "Calculate";
             this.btnCalcLeak1.UseVisualStyleBackColor = false;
+            this.btnCalcLeak1.Click += new System.EventHandler(this.btnCalcLeak1_Click);
             // 
             // btnClearLeak1
             // 
@@ -184,6 +185,7 @@
             this.btnClearLeak1.TabIndex = 11;
             this.btnClearLeak1.Text = "Clear";
             this.btnClearLeak1.UseVisualStyleBackColor = false;
+            this.btnClearLeak1.Click += new System.EventHandler(this.btnClearLeak1_Click);
             // 
             // panel1
             // 
@@ -200,9 +202,9 @@
             this.lblResultLeak1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
             this.lblResultLeak1.Location = new System.Drawing.Point(62, 13);
             this.lblResultLeak1.Name = "lblResultLeak1";
-            this.lblResultLeak1.Size = new System.Drawing.Size(149, 22);
+            this.lblResultLeak1.Size = new System.Drawing.Size(66, 22);
             this.lblResultLeak1.TabIndex = 0;
-            this.lblResultLeak1.Text = "1 ccm = 23 sccm ";
+            this.lblResultLeak1.Text = "Result:";
             this.lblResultLeak1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // panel2
