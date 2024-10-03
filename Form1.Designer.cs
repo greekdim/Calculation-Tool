@@ -48,6 +48,8 @@
             this.btnCloseChildForm = new System.Windows.Forms.Button();
             this.lblTitle = new System.Windows.Forms.Label();
             this.panelDesktopPane = new System.Windows.Forms.Panel();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.pictureMac = new System.Windows.Forms.PictureBox();
@@ -85,9 +87,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 711);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(107, 24);
+            this.label2.Size = new System.Drawing.Size(183, 24);
             this.label2.TabIndex = 1;
-            this.label2.Text = "by Dimitri Soultis";
+            this.label2.Text = "programmed by Dimitri Soultis";
             // 
             // button7
             // 
@@ -103,7 +105,7 @@
             this.button7.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
             this.button7.Size = new System.Drawing.Size(226, 60);
             this.button7.TabIndex = 9;
-            this.button7.Text = "  ?";
+            this.button7.Text = "  MAC website tools";
             this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.button7.UseVisualStyleBackColor = true;
@@ -357,6 +359,8 @@
             this.panelDesktopPane.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
+            this.panelDesktopPane.Controls.Add(this.label5);
+            this.panelDesktopPane.Controls.Add(this.label4);
             this.panelDesktopPane.Controls.Add(this.label3);
             this.panelDesktopPane.Controls.Add(this.linkLabel1);
             this.panelDesktopPane.Controls.Add(this.pictureMac);
@@ -364,6 +368,26 @@
             this.panelDesktopPane.Name = "panelDesktopPane";
             this.panelDesktopPane.Size = new System.Drawing.Size(1021, 635);
             this.panelDesktopPane.TabIndex = 2;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.label5.Location = new System.Drawing.Point(306, 197);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(423, 25);
+            this.label5.TabIndex = 4;
+            this.label5.Text = "For any assistance and/or remark, contact:";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.label4.Location = new System.Drawing.Point(306, 234);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(240, 66);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "Dimitri SOULTIS\r\ndimitri.soultis@macvalves.be\r\n+32 487 34 27 17";
             // 
             // label3
             // 
@@ -385,6 +409,7 @@
             this.linkLabel1.TabIndex = 1;
             this.linkLabel1.TabStop = true;
             this.linkLabel1.Text = "https://www.macvalves.com/";
+            this.linkLabel1.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabel1_LinkClicked);
             // 
             // pictureMac
             // 
@@ -444,5 +469,7 @@
         private Button btnMaximize;
         private Button btnMinimize;
         private Button btnClose;
+        private Label label5;
+        private Label label4;
     }
 }

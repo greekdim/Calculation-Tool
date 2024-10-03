@@ -43,31 +43,31 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.lblResultLeak1 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel3 = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.comboBox4 = new System.Windows.Forms.ComboBox();
-            this.comboBox3 = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
-            this.textBox4 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
+            this.btnClear2 = new System.Windows.Forms.Button();
+            this.btnCalcLeak2 = new System.Windows.Forms.Button();
+            this.pnlResult2 = new System.Windows.Forms.Panel();
+            this.lblResult2Tool2 = new System.Windows.Forms.Label();
+            this.lblResult1Tool2 = new System.Windows.Forms.Label();
+            this.cbP1orLeak = new System.Windows.Forms.ComboBox();
+            this.cbDeltaTime = new System.Windows.Forms.ComboBox();
+            this.cbVolume = new System.Windows.Forms.ComboBox();
+            this.cbP1 = new System.Windows.Forms.ComboBox();
+            this.txtP1orLeak = new System.Windows.Forms.TextBox();
+            this.txtDeltaTime = new System.Windows.Forms.TextBox();
+            this.txtVolume = new System.Windows.Forms.TextBox();
+            this.txtP1 = new System.Windows.Forms.TextBox();
+            this.lblP1orLeak = new System.Windows.Forms.Label();
+            this.lblDeltaTime = new System.Windows.Forms.Label();
+            this.lblVolume = new System.Windows.Forms.Label();
+            this.lblP1 = new System.Windows.Forms.Label();
+            this.gprBoxRadio = new System.Windows.Forms.GroupBox();
+            this.rbLeakCalc = new System.Windows.Forms.RadioButton();
+            this.rbDeltaPCalc = new System.Windows.Forms.RadioButton();
             this.lbl2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.pnlResult2.SuspendLayout();
+            this.gprBoxRadio.SuspendLayout();
             this.SuspendLayout();
             // 
             // cbLeakFormulaSelection
@@ -210,210 +210,217 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
-            this.panel2.Controls.Add(this.button2);
-            this.panel2.Controls.Add(this.button1);
-            this.panel2.Controls.Add(this.panel3);
-            this.panel2.Controls.Add(this.comboBox4);
-            this.panel2.Controls.Add(this.comboBox3);
-            this.panel2.Controls.Add(this.comboBox2);
-            this.panel2.Controls.Add(this.comboBox1);
-            this.panel2.Controls.Add(this.textBox4);
-            this.panel2.Controls.Add(this.textBox3);
-            this.panel2.Controls.Add(this.textBox2);
-            this.panel2.Controls.Add(this.textBox1);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Controls.Add(this.groupBox1);
+            this.panel2.Controls.Add(this.btnClear2);
+            this.panel2.Controls.Add(this.btnCalcLeak2);
+            this.panel2.Controls.Add(this.pnlResult2);
+            this.panel2.Controls.Add(this.cbP1orLeak);
+            this.panel2.Controls.Add(this.cbDeltaTime);
+            this.panel2.Controls.Add(this.cbVolume);
+            this.panel2.Controls.Add(this.cbP1);
+            this.panel2.Controls.Add(this.txtP1orLeak);
+            this.panel2.Controls.Add(this.txtDeltaTime);
+            this.panel2.Controls.Add(this.txtVolume);
+            this.panel2.Controls.Add(this.txtP1);
+            this.panel2.Controls.Add(this.lblP1orLeak);
+            this.panel2.Controls.Add(this.lblDeltaTime);
+            this.panel2.Controls.Add(this.lblVolume);
+            this.panel2.Controls.Add(this.lblP1);
+            this.panel2.Controls.Add(this.gprBoxRadio);
             this.panel2.Controls.Add(this.lbl2);
             this.panel2.Location = new System.Drawing.Point(-4, 243);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(1007, 392);
             this.panel2.TabIndex = 13;
             // 
-            // button2
+            // btnClear2
             // 
-            this.button2.BackColor = System.Drawing.Color.WhiteSmoke;
-            this.button2.Location = new System.Drawing.Point(821, 182);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(102, 49);
-            this.button2.TabIndex = 18;
-            this.button2.Text = "Clear";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnClear2.BackColor = System.Drawing.Color.WhiteSmoke;
+            this.btnClear2.Location = new System.Drawing.Point(821, 182);
+            this.btnClear2.Name = "btnClear2";
+            this.btnClear2.Size = new System.Drawing.Size(102, 49);
+            this.btnClear2.TabIndex = 18;
+            this.btnClear2.Text = "Clear";
+            this.btnClear2.UseVisualStyleBackColor = false;
+            this.btnClear2.Click += new System.EventHandler(this.btnClear2_Click);
             // 
-            // button1
+            // btnCalcLeak2
             // 
-            this.button1.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.button1.Location = new System.Drawing.Point(661, 182);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(124, 49);
-            this.button1.TabIndex = 17;
-            this.button1.Text = "Calculate";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnCalcLeak2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.btnCalcLeak2.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.btnCalcLeak2.Location = new System.Drawing.Point(661, 182);
+            this.btnCalcLeak2.Name = "btnCalcLeak2";
+            this.btnCalcLeak2.Size = new System.Drawing.Size(124, 49);
+            this.btnCalcLeak2.TabIndex = 17;
+            this.btnCalcLeak2.Text = "Calculate";
+            this.btnCalcLeak2.UseVisualStyleBackColor = false;
+            this.btnCalcLeak2.Click += new System.EventHandler(this.btnCalcLeak2_Click);
             // 
-            // panel3
+            // pnlResult2
             // 
-            this.panel3.Controls.Add(this.label8);
-            this.panel3.Controls.Add(this.label7);
-            this.panel3.Location = new System.Drawing.Point(597, 253);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(395, 101);
-            this.panel3.TabIndex = 16;
+            this.pnlResult2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(202)))), ((int)(((byte)(238)))));
+            this.pnlResult2.Controls.Add(this.lblResult2Tool2);
+            this.pnlResult2.Controls.Add(this.lblResult1Tool2);
+            this.pnlResult2.Location = new System.Drawing.Point(597, 253);
+            this.pnlResult2.Name = "pnlResult2";
+            this.pnlResult2.Size = new System.Drawing.Size(395, 101);
+            this.pnlResult2.TabIndex = 16;
             // 
-            // label8
+            // lblResult2Tool2
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(3, 54);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(206, 25);
-            this.label8.TabIndex = 1;
-            this.label8.Text = "Pressure drop over time:";
+            this.lblResult2Tool2.AutoSize = true;
+            this.lblResult2Tool2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResult2Tool2.Location = new System.Drawing.Point(3, 54);
+            this.lblResult2Tool2.Name = "lblResult2Tool2";
+            this.lblResult2Tool2.Size = new System.Drawing.Size(206, 22);
+            this.lblResult2Tool2.TabIndex = 1;
+            this.lblResult2Tool2.Text = "Pressure drop over time:";
             // 
-            // label7
+            // lblResult1Tool2
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(3, 18);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(224, 25);
-            this.label7.TabIndex = 0;
-            this.label7.Text = "Leakrate (or final cal press):";
+            this.lblResult1Tool2.AutoSize = true;
+            this.lblResult1Tool2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.lblResult1Tool2.Location = new System.Drawing.Point(3, 18);
+            this.lblResult1Tool2.Name = "lblResult1Tool2";
+            this.lblResult1Tool2.Size = new System.Drawing.Size(233, 22);
+            this.lblResult1Tool2.TabIndex = 0;
+            this.lblResult1Tool2.Text = "Leakrate (or final cal press):";
             // 
-            // comboBox4
+            // cbP1orLeak
             // 
-            this.comboBox4.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox4.FormattingEnabled = true;
-            this.comboBox4.Location = new System.Drawing.Point(487, 288);
-            this.comboBox4.Name = "comboBox4";
-            this.comboBox4.Size = new System.Drawing.Size(91, 33);
-            this.comboBox4.TabIndex = 15;
+            this.cbP1orLeak.BackColor = System.Drawing.SystemColors.Control;
+            this.cbP1orLeak.FormattingEnabled = true;
+            this.cbP1orLeak.Location = new System.Drawing.Point(487, 288);
+            this.cbP1orLeak.Name = "cbP1orLeak";
+            this.cbP1orLeak.Size = new System.Drawing.Size(91, 33);
+            this.cbP1orLeak.TabIndex = 15;
             // 
-            // comboBox3
+            // cbDeltaTime
             // 
-            this.comboBox3.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox3.FormattingEnabled = true;
-            this.comboBox3.Location = new System.Drawing.Point(487, 253);
-            this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(91, 33);
-            this.comboBox3.TabIndex = 14;
+            this.cbDeltaTime.BackColor = System.Drawing.SystemColors.Control;
+            this.cbDeltaTime.FormattingEnabled = true;
+            this.cbDeltaTime.Location = new System.Drawing.Point(487, 253);
+            this.cbDeltaTime.Name = "cbDeltaTime";
+            this.cbDeltaTime.Size = new System.Drawing.Size(91, 33);
+            this.cbDeltaTime.TabIndex = 14;
             // 
-            // comboBox2
+            // cbVolume
             // 
-            this.comboBox2.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(487, 218);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(91, 33);
-            this.comboBox2.TabIndex = 13;
+            this.cbVolume.BackColor = System.Drawing.SystemColors.Control;
+            this.cbVolume.FormattingEnabled = true;
+            this.cbVolume.Location = new System.Drawing.Point(487, 218);
+            this.cbVolume.Name = "cbVolume";
+            this.cbVolume.Size = new System.Drawing.Size(91, 33);
+            this.cbVolume.TabIndex = 13;
             // 
-            // comboBox1
+            // cbP1
             // 
-            this.comboBox1.BackColor = System.Drawing.SystemColors.Control;
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Location = new System.Drawing.Point(487, 182);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(91, 33);
-            this.comboBox1.TabIndex = 12;
+            this.cbP1.BackColor = System.Drawing.SystemColors.Control;
+            this.cbP1.FormattingEnabled = true;
+            this.cbP1.Location = new System.Drawing.Point(487, 182);
+            this.cbP1.Name = "cbP1";
+            this.cbP1.Size = new System.Drawing.Size(91, 33);
+            this.cbP1.TabIndex = 12;
             // 
-            // textBox4
+            // txtP1orLeak
             // 
-            this.textBox4.Location = new System.Drawing.Point(331, 288);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(150, 31);
-            this.textBox4.TabIndex = 11;
+            this.txtP1orLeak.Location = new System.Drawing.Point(331, 288);
+            this.txtP1orLeak.Name = "txtP1orLeak";
+            this.txtP1orLeak.Size = new System.Drawing.Size(150, 31);
+            this.txtP1orLeak.TabIndex = 11;
             // 
-            // textBox3
+            // txtDeltaTime
             // 
-            this.textBox3.Location = new System.Drawing.Point(331, 253);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(150, 31);
-            this.textBox3.TabIndex = 10;
+            this.txtDeltaTime.Location = new System.Drawing.Point(331, 253);
+            this.txtDeltaTime.Name = "txtDeltaTime";
+            this.txtDeltaTime.Size = new System.Drawing.Size(150, 31);
+            this.txtDeltaTime.TabIndex = 10;
             // 
-            // textBox2
+            // txtVolume
             // 
-            this.textBox2.Location = new System.Drawing.Point(331, 219);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(150, 31);
-            this.textBox2.TabIndex = 9;
+            this.txtVolume.Location = new System.Drawing.Point(331, 219);
+            this.txtVolume.Name = "txtVolume";
+            this.txtVolume.Size = new System.Drawing.Size(150, 31);
+            this.txtVolume.TabIndex = 9;
             // 
-            // textBox1
+            // txtP1
             // 
-            this.textBox1.Location = new System.Drawing.Point(331, 182);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(150, 31);
-            this.textBox1.TabIndex = 8;
+            this.txtP1.Location = new System.Drawing.Point(331, 182);
+            this.txtP1.Name = "txtP1";
+            this.txtP1.Size = new System.Drawing.Size(150, 31);
+            this.txtP1.TabIndex = 8;
             // 
-            // label6
+            // lblP1orLeak
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(27, 291);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(257, 25);
-            this.label6.TabIndex = 7;
-            this.label6.Text = "Final Pressure or Valve Leakrate";
+            this.lblP1orLeak.AutoSize = true;
+            this.lblP1orLeak.Location = new System.Drawing.Point(27, 291);
+            this.lblP1orLeak.Name = "lblP1orLeak";
+            this.lblP1orLeak.Size = new System.Drawing.Size(257, 25);
+            this.lblP1orLeak.TabIndex = 7;
+            this.lblP1orLeak.Text = "Final Pressure or Valve Leakrate";
             // 
-            // label5
+            // lblDeltaTime
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(27, 253);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(127, 25);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "Period of Time";
+            this.lblDeltaTime.AutoSize = true;
+            this.lblDeltaTime.Location = new System.Drawing.Point(27, 253);
+            this.lblDeltaTime.Name = "lblDeltaTime";
+            this.lblDeltaTime.Size = new System.Drawing.Size(127, 25);
+            this.lblDeltaTime.TabIndex = 6;
+            this.lblDeltaTime.Text = "Period of Time";
             // 
-            // label4
+            // lblVolume
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(27, 218);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(72, 25);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Volume";
+            this.lblVolume.AutoSize = true;
+            this.lblVolume.Location = new System.Drawing.Point(27, 218);
+            this.lblVolume.Name = "lblVolume";
+            this.lblVolume.Size = new System.Drawing.Size(72, 25);
+            this.lblVolume.TabIndex = 5;
+            this.lblVolume.Text = "Volume";
             // 
-            // label3
+            // lblP1
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(27, 182);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Initial Pressure";
+            this.lblP1.AutoSize = true;
+            this.lblP1.Location = new System.Drawing.Point(27, 182);
+            this.lblP1.Name = "lblP1";
+            this.lblP1.Size = new System.Drawing.Size(125, 25);
+            this.lblP1.TabIndex = 4;
+            this.lblP1.Text = "Initial Pressure";
             // 
-            // groupBox1
+            // gprBoxRadio
             // 
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Location = new System.Drawing.Point(27, 57);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(965, 104);
-            this.groupBox1.TabIndex = 3;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Calculation Type";
+            this.gprBoxRadio.Controls.Add(this.rbLeakCalc);
+            this.gprBoxRadio.Controls.Add(this.rbDeltaPCalc);
+            this.gprBoxRadio.Location = new System.Drawing.Point(27, 57);
+            this.gprBoxRadio.Name = "gprBoxRadio";
+            this.gprBoxRadio.Size = new System.Drawing.Size(965, 104);
+            this.gprBoxRadio.TabIndex = 3;
+            this.gprBoxRadio.TabStop = false;
+            this.gprBoxRadio.Text = "Calculation Type";
             // 
-            // radioButton1
+            // rbLeakCalc
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(12, 30);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(884, 29);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "Calculate a LEAK FLOW RATE using a PRESSURE DROP over a known period of TIME, fro" +
+            this.rbLeakCalc.AutoSize = true;
+            this.rbLeakCalc.Location = new System.Drawing.Point(12, 30);
+            this.rbLeakCalc.Name = "rbLeakCalc";
+            this.rbLeakCalc.Size = new System.Drawing.Size(884, 29);
+            this.rbLeakCalc.TabIndex = 0;
+            this.rbLeakCalc.TabStop = true;
+            this.rbLeakCalc.Text = "Calculate a LEAK FLOW RATE using a PRESSURE DROP over a known period of TIME, fro" +
     "m a know VOLUME\r\n";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rbLeakCalc.UseVisualStyleBackColor = true;
+            this.rbLeakCalc.CheckedChanged += new System.EventHandler(this.rbLeakCalc_CheckedChanged);
             // 
-            // radioButton2
+            // rbDeltaPCalc
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(12, 65);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(925, 29);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "Calculate a PRESSURE DROP in a known VOLUME over a known period of TIME, from a k" +
+            this.rbDeltaPCalc.AutoSize = true;
+            this.rbDeltaPCalc.Location = new System.Drawing.Point(12, 65);
+            this.rbDeltaPCalc.Name = "rbDeltaPCalc";
+            this.rbDeltaPCalc.Size = new System.Drawing.Size(925, 29);
+            this.rbDeltaPCalc.TabIndex = 1;
+            this.rbDeltaPCalc.TabStop = true;
+            this.rbDeltaPCalc.Text = "Calculate a PRESSURE DROP in a known VOLUME over a known period of TIME, from a k" +
     "nown VALVE LEAK RATE\r\n";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rbDeltaPCalc.UseVisualStyleBackColor = true;
+            this.rbDeltaPCalc.CheckedChanged += new System.EventHandler(this.rbDeltaPCalc_CheckedChanged);
             // 
             // lbl2
             // 
@@ -450,10 +457,10 @@
             this.panel1.PerformLayout();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.pnlResult2.ResumeLayout(false);
+            this.pnlResult2.PerformLayout();
+            this.gprBoxRadio.ResumeLayout(false);
+            this.gprBoxRadio.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -482,25 +489,25 @@
         private Label lblResultLeak1;
         private Panel panel2;
         private Label lbl2;
-        private RadioButton radioButton2;
-        private RadioButton radioButton1;
-        private GroupBox groupBox1;
-        private Button button2;
-        private Button button1;
-        private Panel panel3;
-        private Label label8;
-        private Label label7;
-        private ComboBox comboBox4;
-        private ComboBox comboBox3;
-        private ComboBox comboBox2;
-        private ComboBox comboBox1;
-        private TextBox textBox4;
-        private TextBox textBox3;
-        private TextBox textBox2;
-        private TextBox textBox1;
-        private Label label6;
-        private Label label5;
-        private Label label4;
-        private Label label3;
+        private RadioButton rbDeltaPCalc;
+        private RadioButton rbLeakCalc;
+        private GroupBox gprBoxRadio;
+        private Button btnClear2;
+        private Button btnCalcLeak2;
+        private Panel pnlResult2;
+        private Label lblResult2Tool2;
+        private Label lblResult1Tool2;
+        private ComboBox cbP1orLeak;
+        private ComboBox cbDeltaTime;
+        private ComboBox cbVolume;
+        private ComboBox cbP1;
+        private TextBox txtP1orLeak;
+        private TextBox txtDeltaTime;
+        private TextBox txtVolume;
+        private TextBox txtP1;
+        private Label lblP1orLeak;
+        private Label lblDeltaTime;
+        private Label lblVolume;
+        private Label lblP1;
     }
 }

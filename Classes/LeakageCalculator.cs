@@ -33,6 +33,31 @@ namespace Calc_Tool___Rev_A.Classes
 
             return result;
         }
+
+
+
+        public double CalculateLeakRateORPressureDrop(double p1, double p1OrLeak, double volume, double deltaTime, string pressureUnitP1, string pressureUnitP1OrLeak, string volumeUnit, string deltaTimeUnit)
+        {
+            // Conversion de P1 en atm
+            double convertedP1 = ConvertPressure(pressureUnitP1, p1);
+
+            // Conversion de P1OrLeak en atm
+            double convertedP1OrLeak = ConvertPressure(pressureUnitP1OrLeak, p1OrLeak);
+
+            // Conversion du volume en cm³
+            double convertedVolume = ConvertVolume(volumeUnit, volume);
+
+            // Conversion du temps en minutes
+            double convertedDeltaTime = ConvertTimeToMinutes(deltaTimeUnit, deltaTime);
+
+            // Calcul de la fuite en sccm
+            double leakRate = ((convertedP1 - convertedP1OrLeak) * convertedVolume) / (convertedDeltaTime * 1);
+
+            return leakRate;
+        }
+
+
+
         private double ConvertPressure(string unit, double value)
         {
             // Calculer la pression absolue en fonction de l'unité
@@ -51,7 +76,7 @@ namespace Calc_Tool___Rev_A.Classes
                 case "atm":
                     return value + 1; // Si l'unité est déjà en atm, ajouter 1 pour passer de relative à absolue
                 default:
-                    throw new ArgumentException("Unité de pression non reconnue.");
+                    throw new ArgumentException("Pressure unit unknown.");
             }
         }
 
@@ -70,7 +95,35 @@ namespace Calc_Tool___Rev_A.Classes
                 case "°K":
                     return value; // Kelvin
                 default:
-                    throw new ArgumentException("Unité de température non reconnue.");
+                    throw new ArgumentException("Temperature unit unknown.");
+            }
+        }
+
+        public double ConvertVolume(string unit, double value)
+        {
+            // Convertir le volume en cm³
+            switch (unit)
+            {
+                case "L":
+                    return value * 1000; // 1 L = 1000 cm³
+                case "cm³":
+                    return value; // cm³ reste cm³
+                default:
+                    throw new ArgumentException("Volume unit unknown.");
+            }
+        }
+
+        public double ConvertTimeToMinutes(string unit, double value)
+        {
+            // Convertir le temps en minutes
+            switch (unit)
+            {
+                case "min":
+                    return value; // Déjà en minutes
+                case "sec":
+                    return value / 60; // Convertir en minutes
+                default:
+                    throw new ArgumentException("Time unit unknown.");
             }
         }
 
