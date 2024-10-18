@@ -9,6 +9,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.Diagnostics;
 using static System.Net.Mime.MediaTypeNames;
 using static System.Windows.Forms.VisualStyles.VisualStyleElement;
 
@@ -22,6 +23,7 @@ namespace Calc_Tool___Rev_A.Forms
             // Calculs Cv Kv Orifice
             InitializeComponent();
             lblResult1.Text = "";
+            comboBoxCvKvOr.SelectedIndex = 1;
 
             // Calculs Débit - Cv or Flow
             // Ajouter un événement CheckedChanged pour les RadioButtons
@@ -67,6 +69,10 @@ namespace Calc_Tool___Rev_A.Forms
                         //throw new Exception();   
                         throw new ApplicationException("Please enter a positive value");
                 }
+
+                // Griser la ComboBox et le TextBox après le calcul
+                comboBoxCvKvOr.Enabled = false;
+                txtValueToCalc.Enabled = false;
             }
             catch (FormatException)
             {
@@ -79,6 +85,49 @@ namespace Calc_Tool___Rev_A.Forms
             }
 
         }
+        private void comboBoxCvKvOr_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            // Réinitialiser les valeurs des contrôles
+            lblResult1.Text = string.Empty;
+            txtValueToCalc.Text = string.Empty;
+        }
+        private void btnClearCvKvO_Click(object sender, EventArgs e)
+        {
+            // Dégriser la ComboBox et le TextBox
+            comboBoxCvKvOr.Enabled = true;
+            txtValueToCalc.Enabled = true;
+
+            // Réinitialiser la ComboBox à l'index 1
+            comboBoxCvKvOr.SelectedIndex = 1;
+
+            // Vider les champs de texte
+            txtValueToCalc.Text = string.Empty;
+            lblResult1.Text = string.Empty;
+        }
+
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            // Detailed help message explaining the difference between Cv and Kv and their connection to the orifice
+            string message = "Cv (Imperial System):\n" +
+                             "- Flow factor measuring GPM through an orifice with a 1 psi pressure drop at 60°F.\n" +
+                             "- Commonly used in the U.S. and represents the valve's capacity.\n\n" +
+                             "Kv (Metric System):\n" +
+                             "- Flow coefficient measuring m³/h through an orifice with a 1 bar pressure drop at 20°C.\n" +
+                             "- Used in the metric system (SI units), representing valve efficiency.\n\n" +
+                             "Relation to Orifice Size:\n" +
+                             "- Both Cv and Kv values are critical in determining the appropriate orifice size.\n" +
+                             "- Orifice size directly impacts the flow rate, influencing the valve selection.\n" +
+                             "- Larger orifices allow greater flow rates, affecting both Cv and Kv calculations.";
+
+            // Display the message in a pop-up dialog box
+            MessageBox.Show(message, "Flow Coefficients - Help", MessageBoxButtons.OK, MessageBoxIcon.Information);
+
+
+        }
+
+
+
 
         //
         // Calculs Débit - Cv or Flow
@@ -180,12 +229,7 @@ namespace Calc_Tool___Rev_A.Forms
             tBoxGravity.Text = G.ToString();
         }
 
-        private void comboBoxCvKvOr_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            // Réinitialiser les valeurs des contrôles
-            lblResult1.Text = string.Empty;
-            txtValueToCalc.Text = string.Empty;
-        }
+
 
 
 
@@ -259,6 +303,13 @@ namespace Calc_Tool___Rev_A.Forms
             SetFlowResultLabel();
         }
 
-
+        private void picBoxCalcType_Click(object sender, EventArgs e)
+        {
+            // Display a message box with information on how to use the calculation options.
+            MessageBox.Show("Select the appropriate option to calculate a valve's Cv using a flow rate in L/min for liquids or NL/min for gases, or to determine the flow rate using the Cv.",
+                            "Calculation Type Information",
+                            MessageBoxButtons.OK,
+                            MessageBoxIcon.Information);
+        }
     }
 }

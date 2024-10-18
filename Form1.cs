@@ -15,6 +15,7 @@ namespace Calc_Tool___Rev_A
         public Form1()
         {
             InitializeComponent();
+
             random = new Random();
             btnCloseChildForm.Visible = false;
             this.Text = string.Empty;
@@ -139,7 +140,10 @@ namespace Calc_Tool___Rev_A
             //ActivateButton(sender);
             OpenChildForm(new Forms.FormThreads(), sender);
         }
-
+        private void btnWebsiteTools_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.FormMacWebsiteTools(), sender);
+        }
         private void button7_Click(object sender, EventArgs e)
         {
             ActivateButton(sender);
@@ -196,6 +200,8 @@ namespace Calc_Tool___Rev_A
         {
 
         }
+
+
     }
 
 

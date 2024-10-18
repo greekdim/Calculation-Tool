@@ -16,6 +16,9 @@
     <Compile Update="Forms\FormLeakage.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Forms\FormMacWebsiteTools.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="Forms\FormThreads.cs">
       <SubType>Form</SubType>
     </Compile>

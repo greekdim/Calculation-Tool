@@ -116,7 +116,7 @@ namespace Calc_Tool___Rev_A.Classes
             }
             else //on calcule Flow
             {
-                if (_liquidOrGas == "liquid")
+                if (_liquidOrGas == "Liquid")
                 {
                     result = 14.42 * _variable * Math.Sqrt(dP / _G);
                     return CalculationTypeFlow.Flowliquid;

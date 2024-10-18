@@ -135,7 +135,7 @@ namespace Calc_Tool___Rev_A.Forms
             EnableControls(true);
 
             // Réinitialiser le résultat
-            lblResultLeak1.Text = string.Empty;
+            lblResultLeak1.Text = "Result:";
         }
         private void DisableControls(bool isTool1)
         {
@@ -241,8 +241,7 @@ namespace Calc_Tool___Rev_A.Forms
         {
             try
             {
-                // Désactiver les contrôles de l'outil 2
-                DisableControls(false);
+
                 // Récupération des valeurs des textboxes et comboboxes
                 double p1 = Convert.ToDouble(txtP1.Text.Replace('.', ','));
                 double p1OrLeak = Convert.ToDouble(txtP1orLeak.Text.Replace('.', ','));
@@ -255,7 +254,8 @@ namespace Calc_Tool___Rev_A.Forms
                     MessageBox.Show("Please enter positive values.");
                     return;
                 }
-
+                // Désactiver les contrôles de l'outil 2
+                DisableControls(false);
                 // Unité pour p1
                 string pressureUnitP1 = cbP1.SelectedItem.ToString();
 
@@ -282,10 +282,16 @@ namespace Calc_Tool___Rev_A.Forms
                 }
                 else if (rbDeltaPCalc.Checked)
                 {
-                    // Si c'est la sélection du deuxième radiobutton, tu pourrais avoir un autre calcul ici
-                    // Exemple (à adapter) : Calcul de la chute de pression
-                    lblResult1Tool2.Text = $"Final Pressure = {p1OrLeak:F2} atm"; // Exemple d'affichage
-                    lblResult2Tool2.Text = $"Pressure drop over time = {p1 - p1OrLeak:F2} atm/min"; // Exemple d'affichage
+                    // Appel de la méthode pour calculer la chute de pression
+                    double finalPressureRelative = calculator.CalculatePressureDrop(
+                        p1, p1OrLeak, volume, deltaTime, pressureUnitP1, volumeUnit, deltaTimeUnit // Ajout de deltaTimeUnit ici
+                    );
+
+                    // Affichage du résultat dans lblResult1Tool2
+                    lblResult1Tool2.Text = $"Final Pressure = {finalPressureRelative:F2} {pressureUnitP1}"; // Affiche le résultat avec l'unité
+                                                                                                            // Calcul de la différence pour lblResult2Tool2
+                    double pressureDifference = p1 - finalPressureRelative; // Calcul de p1 - finalPressure
+                    lblResult2Tool2.Text = $"Pressure Difference = {pressureDifference:F2} {pressureUnitP1}"; // Affichage de la différence
                 }
             }
             catch (FormatException)

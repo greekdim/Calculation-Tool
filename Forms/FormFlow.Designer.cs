@@ -29,7 +29,10 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormFlow));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.btnClearCvKvO = new System.Windows.Forms.Button();
             this.btnCalculateOrifice = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -66,12 +69,15 @@
             this.btnClear = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
+            this.picBoxCalcType = new System.Windows.Forms.PictureBox();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.panel4.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCalcType)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -79,6 +85,8 @@
             this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
+            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.btnClearCvKvO);
             this.panel1.Controls.Add(this.btnCalculateOrifice);
             this.panel1.Controls.Add(this.label2);
             this.panel1.Controls.Add(this.panel2);
@@ -90,14 +98,37 @@
             this.panel1.Size = new System.Drawing.Size(349, 316);
             this.panel1.TabIndex = 0;
             // 
+            // pictureBox1
+            // 
+            this.pictureBox1.ErrorImage = null;
+            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
+            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
+            this.pictureBox1.Location = new System.Drawing.Point(290, 20);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 32);
+            this.pictureBox1.TabIndex = 31;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // btnClearCvKvO
+            // 
+            this.btnClearCvKvO.Location = new System.Drawing.Point(226, 251);
+            this.btnClearCvKvO.Name = "btnClearCvKvO";
+            this.btnClearCvKvO.Size = new System.Drawing.Size(63, 34);
+            this.btnClearCvKvO.TabIndex = 30;
+            this.btnClearCvKvO.Text = "Clear";
+            this.btnClearCvKvO.UseVisualStyleBackColor = true;
+            this.btnClearCvKvO.Click += new System.EventHandler(this.btnClearCvKvO_Click);
+            // 
             // btnCalculateOrifice
             // 
+            this.btnCalculateOrifice.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btnCalculateOrifice.Location = new System.Drawing.Point(35, 249);
             this.btnCalculateOrifice.Name = "btnCalculateOrifice";
             this.btnCalculateOrifice.Size = new System.Drawing.Size(150, 38);
             this.btnCalculateOrifice.TabIndex = 29;
             this.btnCalculateOrifice.Text = "Calculate";
-            this.btnCalculateOrifice.UseVisualStyleBackColor = true;
+            this.btnCalculateOrifice.UseVisualStyleBackColor = false;
             this.btnCalculateOrifice.Click += new System.EventHandler(this.btnCalculateOrifice_Click);
             // 
             // label2
@@ -144,7 +175,6 @@
             this.comboBoxCvKvOr.Name = "comboBoxCvKvOr";
             this.comboBoxCvKvOr.Size = new System.Drawing.Size(254, 33);
             this.comboBoxCvKvOr.TabIndex = 2;
-            this.comboBoxCvKvOr.SelectedIndexChanged += new System.EventHandler(this.comboBoxCvKvOr_SelectedIndexChanged);
             // 
             // txtValueToCalc
             // 
@@ -206,6 +236,7 @@
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.picBoxCalcType);
             this.groupBox1.Controls.Add(this.rBFlow);
             this.groupBox1.Controls.Add(this.rBCv);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
@@ -475,6 +506,16 @@
             // 
             this.errorProvider1.ContainerControl = this;
             // 
+            // picBoxCalcType
+            // 
+            this.picBoxCalcType.Image = ((System.Drawing.Image)(resources.GetObject("picBoxCalcType.Image")));
+            this.picBoxCalcType.Location = new System.Drawing.Point(331, 11);
+            this.picBoxCalcType.Name = "picBoxCalcType";
+            this.picBoxCalcType.Size = new System.Drawing.Size(32, 32);
+            this.picBoxCalcType.TabIndex = 31;
+            this.picBoxCalcType.TabStop = false;
+            this.picBoxCalcType.Click += new System.EventHandler(this.picBoxCalcType_Click);
+            // 
             // FormFlow
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -487,6 +528,7 @@
             this.Text = "Flow - Orifice - Cv";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
@@ -496,6 +538,7 @@
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxCalcType)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -539,5 +582,8 @@
         private Button btnClear;
         private ToolTip toolTip1;
         private ErrorProvider errorProvider1;
+        private Button btnClearCvKvO;
+        private PictureBox pictureBox1;
+        private PictureBox picBoxCalcType;
     }
 }

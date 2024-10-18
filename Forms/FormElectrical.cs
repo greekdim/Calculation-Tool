@@ -142,6 +142,23 @@ namespace Calc_Tool___Rev_A.Forms
             return (number % 1 == 0) ? number.Value.ToString("F0") : number.Value.ToString("F2");
         }
 
+        private void picBoxURIPUI_Click(object sender, EventArgs e)
+        {
+            // Message explicatif des deux lois utilisées dans l'outil, avec un exemple d'application
+            string message = "This tool uses two fundamental electrical equations:\n\n" +
+                             "1. Ohm's Law: U = RI\n" +
+                             "   - U is the voltage in volts (V).\n" +
+                             "   - R is the resistance in ohms (Ω).\n" +
+                             "   - I is the current in amperes (A).\n\n" +
+                             "2. Power Law: P = UI\n" +
+                             "   - P is the power in watts (W).\n" +
+                             "   - U is the voltage in volts (V).\n" +
+                             "   - I is the current in amperes (A).\n\n" +
+                             "Using these two equations, you can calculate two values if the other two are known.\n\n" +
+                             "Example of application: You can, for example, calculate the current that a PLC would need to supply to a solenoid valve by knowing its power and voltage.";
 
+            // Affichage du message dans une boîte de dialogue
+            MessageBox.Show(message, "Electrical Equations Explanation", MessageBoxButtons.OK, MessageBoxIcon.Information);
+        }
     }
 }

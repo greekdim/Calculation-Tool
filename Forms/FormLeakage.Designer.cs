@@ -64,6 +64,7 @@
             this.rbLeakCalc = new System.Windows.Forms.RadioButton();
             this.rbDeltaPCalc = new System.Windows.Forms.RadioButton();
             this.lbl2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.pnlResult2.SuspendLayout();
@@ -210,6 +211,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.SystemColors.Control;
+            this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.btnClear2);
             this.panel2.Controls.Add(this.btnCalcLeak2);
             this.panel2.Controls.Add(this.pnlResult2);
@@ -432,6 +434,17 @@
             this.lbl2.TabIndex = 2;
             this.lbl2.Text = "Leakage from closed volume calculation";
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 8F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point);
+            this.label3.ForeColor = System.Drawing.Color.Gray;
+            this.label3.Location = new System.Drawing.Point(27, 361);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(410, 21);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "NB: Relative pressures must be entered and are calculated";
+            // 
             // FormLeakage
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
@@ -509,5 +522,6 @@
         private Label lblDeltaTime;
         private Label lblVolume;
         private Label lblP1;
+        private Label label3;
     }
 }

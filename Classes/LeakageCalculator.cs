@@ -56,7 +56,41 @@ namespace Calc_Tool___Rev_A.Classes
             return leakRate;
         }
 
+        public double CalculatePressureDrop(double p1, double p1OrLeak, double volume, double deltaTime, string pressureUnit, string volumeUnit, string deltaTimeUnit)
+        {
+            // Conversion de P1 en atm
+            double convertedP1 = ConvertPressure(pressureUnit, p1);
 
+            // Pas besoin de convertir p1OrLeak, car il s'agit de la valeur de fuite (leakrate)
+
+            // Conversion du volume en cm³
+            double convertedVolume = ConvertVolume(volumeUnit, volume);
+
+            // Conversion du temps en minutes
+            double convertedDeltaTime = ConvertTimeToMinutes(deltaTimeUnit, deltaTime);
+
+            // Calcul de la pression (donne en résultat en pression absolu et en atm)
+            double finalPressureAbsolute = convertedP1 - (p1OrLeak * (1 * convertedDeltaTime) / convertedVolume);
+            double finalPressureRelative = finalPressureAbsolute - 1; // On soustrait 1 atm
+            switch (pressureUnit)
+            {
+                case "atm":
+                    return finalPressureRelative; // Déjà en atm
+                case "mmHg":
+                    return finalPressureRelative * 760; // Conversion en mmHg
+                case "Pa":
+                    return finalPressureRelative * 101325; // Conversion en Pa
+                case "kPa":
+                    return finalPressureRelative * 101.325; // Conversion en kPa
+                case "psi":
+                    return finalPressureRelative * 14.696; // Conversion en psi
+                case "bar":
+                    return finalPressureRelative * 1.01325; // Conversion en bar
+                default:
+                    throw new ArgumentException("Unité de pression non reconnue.");
+            }
+
+        }
 
         private double ConvertPressure(string unit, double value)
         {

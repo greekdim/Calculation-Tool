@@ -7,12 +7,12 @@
     <Nullable>enable</Nullable>
     <UseWindowsForms>true</UseWindowsForms>
     <ImplicitUsings>enable</ImplicitUsings>
-    <ApplicationIcon>MacvalvesIcon2.ico</ApplicationIcon>
+    <ApplicationIcon>maclogo2.ico</ApplicationIcon>
     <PackageIcon>MacvalvesIcon.ico</PackageIcon>
   </PropertyGroup>
 
   <ItemGroup>
-    <Content Include="MacvalvesIcon2.ico" />
+    <Content Include="maclogo2.ico" />
   </ItemGroup>
 
   <ItemGroup>

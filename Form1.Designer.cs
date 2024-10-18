@@ -31,7 +31,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.panelMenu = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
-            this.button7 = new System.Windows.Forms.Button();
+            this.btnWebsiteTools = new System.Windows.Forms.Button();
             this.btnThreads = new System.Windows.Forms.Button();
             this.btnVol = new System.Windows.Forms.Button();
             this.btnDutyCycle = new System.Windows.Forms.Button();
@@ -64,7 +64,7 @@
             // 
             this.panelMenu.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(51)))), ((int)(((byte)(51)))), ((int)(((byte)(76)))));
             this.panelMenu.Controls.Add(this.label2);
-            this.panelMenu.Controls.Add(this.button7);
+            this.panelMenu.Controls.Add(this.btnWebsiteTools);
             this.panelMenu.Controls.Add(this.btnThreads);
             this.panelMenu.Controls.Add(this.btnVol);
             this.panelMenu.Controls.Add(this.btnDutyCycle);
@@ -91,24 +91,25 @@
             this.label2.TabIndex = 1;
             this.label2.Text = "programmed by Dimitri Soultis";
             // 
-            // button7
+            // btnWebsiteTools
             // 
-            this.button7.Dock = System.Windows.Forms.DockStyle.Top;
-            this.button7.FlatAppearance.BorderSize = 0;
-            this.button7.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button7.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.button7.ForeColor = System.Drawing.Color.Gainsboro;
-            this.button7.Image = ((System.Drawing.Image)(resources.GetObject("button7.Image")));
-            this.button7.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.Location = new System.Drawing.Point(0, 520);
-            this.button7.Name = "button7";
-            this.button7.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
-            this.button7.Size = new System.Drawing.Size(226, 60);
-            this.button7.TabIndex = 9;
-            this.button7.Text = "  MAC website tools";
-            this.button7.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button7.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button7.UseVisualStyleBackColor = true;
+            this.btnWebsiteTools.Dock = System.Windows.Forms.DockStyle.Top;
+            this.btnWebsiteTools.FlatAppearance.BorderSize = 0;
+            this.btnWebsiteTools.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnWebsiteTools.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.btnWebsiteTools.ForeColor = System.Drawing.Color.Gainsboro;
+            this.btnWebsiteTools.Image = ((System.Drawing.Image)(resources.GetObject("btnWebsiteTools.Image")));
+            this.btnWebsiteTools.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWebsiteTools.Location = new System.Drawing.Point(0, 520);
+            this.btnWebsiteTools.Name = "btnWebsiteTools";
+            this.btnWebsiteTools.Padding = new System.Windows.Forms.Padding(6, 0, 0, 0);
+            this.btnWebsiteTools.Size = new System.Drawing.Size(226, 60);
+            this.btnWebsiteTools.TabIndex = 9;
+            this.btnWebsiteTools.Text = "  MAC website tools";
+            this.btnWebsiteTools.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btnWebsiteTools.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnWebsiteTools.UseVisualStyleBackColor = true;
+            this.btnWebsiteTools.Click += new System.EventHandler(this.btnWebsiteTools_Click);
             // 
             // btnThreads
             // 
@@ -281,6 +282,7 @@
             this.panelTitleBar.Name = "panelTitleBar";
             this.panelTitleBar.Size = new System.Drawing.Size(1021, 100);
             this.panelTitleBar.TabIndex = 1;
+            this.panelTitleBar.MouseDown += new System.Windows.Forms.MouseEventHandler(this.panelTitleBar_MouseDown);
             // 
             // btnMaximize
             // 
@@ -296,6 +298,7 @@
             this.btnMaximize.Text = "o";
             this.btnMaximize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMaximize.UseVisualStyleBackColor = true;
+            this.btnMaximize.Click += new System.EventHandler(this.btnMaximize_Click);
             // 
             // btnMinimize
             // 
@@ -311,6 +314,7 @@
             this.btnMinimize.Text = "–";
             this.btnMinimize.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnMinimize.UseVisualStyleBackColor = true;
+            this.btnMinimize.Click += new System.EventHandler(this.btnMinimize_Click);
             // 
             // btnClose
             // 
@@ -450,7 +454,7 @@
         private Panel panelMenu;
         private Panel panelLogo;
         private Button btnFlow;
-        private Button button7;
+        private Button btnWebsiteTools;
         private Button btnThreads;
         private Button btnVol;
         private Button btnDutyCycle;

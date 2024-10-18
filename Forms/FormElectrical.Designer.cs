@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormElectrical));
             this.label1 = new System.Windows.Forms.Label();
             this.lblVoltage = new System.Windows.Forms.Label();
             this.lblCurrent = new System.Windows.Forms.Label();
@@ -44,6 +45,10 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btnCalcOhmLaw = new System.Windows.Forms.Button();
             this.btnClearOhmLaw = new System.Windows.Forms.Button();
+            this.picURIPUI = new System.Windows.Forms.PictureBox();
+            this.picBoxURIPUI = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.picURIPUI)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxURIPUI)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -196,11 +201,32 @@
             this.btnClearOhmLaw.UseVisualStyleBackColor = true;
             this.btnClearOhmLaw.Click += new System.EventHandler(this.btnClearOhmLaw_Click);
             // 
+            // picURIPUI
+            // 
+            this.picURIPUI.Image = ((System.Drawing.Image)(resources.GetObject("picURIPUI.Image")));
+            this.picURIPUI.Location = new System.Drawing.Point(538, 35);
+            this.picURIPUI.Name = "picURIPUI";
+            this.picURIPUI.Size = new System.Drawing.Size(449, 441);
+            this.picURIPUI.TabIndex = 30;
+            this.picURIPUI.TabStop = false;
+            // 
+            // picBoxURIPUI
+            // 
+            this.picBoxURIPUI.Image = ((System.Drawing.Image)(resources.GetObject("picBoxURIPUI.Image")));
+            this.picBoxURIPUI.Location = new System.Drawing.Point(488, 35);
+            this.picBoxURIPUI.Name = "picBoxURIPUI";
+            this.picBoxURIPUI.Size = new System.Drawing.Size(32, 32);
+            this.picBoxURIPUI.TabIndex = 31;
+            this.picBoxURIPUI.TabStop = false;
+            this.picBoxURIPUI.Click += new System.EventHandler(this.picBoxURIPUI_Click);
+            // 
             // FormElectrical
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(999, 579);
+            this.Controls.Add(this.picBoxURIPUI);
+            this.Controls.Add(this.picURIPUI);
             this.Controls.Add(this.btnClearOhmLaw);
             this.Controls.Add(this.btnCalcOhmLaw);
             this.Controls.Add(this.label6);
@@ -219,6 +245,8 @@
             this.Controls.Add(this.label1);
             this.Name = "FormElectrical";
             this.Text = "Electrical Formulas";
+            ((System.ComponentModel.ISupportInitialize)(this.picURIPUI)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picBoxURIPUI)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -242,5 +270,7 @@
         private Label label6;
         private Button btnCalcOhmLaw;
         private Button btnClearOhmLaw;
+        private PictureBox picURIPUI;
+        private PictureBox picBoxURIPUI;
     }
 }
