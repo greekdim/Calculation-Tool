@@ -21,6 +21,7 @@ namespace Calc_Tool___Rev_A
             this.Text = string.Empty;
             this.ControlBox = false;
             this.MaximizedBounds = Screen.FromHandle(this.Handle).WorkingArea;
+
         }
 
         // Les lignes suivants permettent de pouvoir deplacer la fenêtre quand on est sur la bande du haut. Risque de problème de compatibilité
@@ -201,7 +202,28 @@ namespace Calc_Tool___Rev_A
 
         }
 
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Ajuster les panneaux dès le chargement du formulaire
+            AdjustPanelSizes();
+        }
 
+        private void AdjustPanelSizes()
+        {
+
+            // Calculate the width based on the form's width (5.6x smaller than Form1)
+            int adjustedWidth = (int)(this.Width / 5.6);
+
+            // Set the width of panelMenu and panelLogo to this calculated width
+            panelMenu.Width = adjustedWidth;
+            panelLogo.Width = adjustedWidth;
+        }
+
+        private void Form1_Resize(object sender, EventArgs e)
+        {
+            // Ajuster les panneaux lors du redimensionnement
+            AdjustPanelSizes();
+        }
     }
 
 
