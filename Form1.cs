@@ -226,6 +226,4 @@ namespace Calc_Tool___Rev_A
         }
     }
 
-
-
 }

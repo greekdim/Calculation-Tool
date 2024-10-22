@@ -29,227 +29,228 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormElectrical));
-            this.label1 = new System.Windows.Forms.Label();
-            this.lblVoltage = new System.Windows.Forms.Label();
-            this.lblCurrent = new System.Windows.Forms.Label();
-            this.lblR = new System.Windows.Forms.Label();
-            this.lblWattage = new System.Windows.Forms.Label();
-            this.txtVoltage = new System.Windows.Forms.TextBox();
-            this.txtCurrent = new System.Windows.Forms.TextBox();
-            this.txtR = new System.Windows.Forms.TextBox();
-            this.txtWattage = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnCalcOhmLaw = new System.Windows.Forms.Button();
-            this.btnClearOhmLaw = new System.Windows.Forms.Button();
-            this.picURIPUI = new System.Windows.Forms.PictureBox();
-            this.picBoxURIPUI = new System.Windows.Forms.PictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.picURIPUI)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxURIPUI)).BeginInit();
-            this.SuspendLayout();
+            label1 = new Label();
+            lblVoltage = new Label();
+            lblCurrent = new Label();
+            lblR = new Label();
+            lblWattage = new Label();
+            txtVoltage = new TextBox();
+            txtCurrent = new TextBox();
+            txtR = new TextBox();
+            txtWattage = new TextBox();
+            label2 = new Label();
+            label3 = new Label();
+            label4 = new Label();
+            label5 = new Label();
+            label6 = new Label();
+            btnCalcOhmLaw = new Button();
+            btnClearOhmLaw = new Button();
+            picURIPUI = new PictureBox();
+            picBoxURIPUI = new PictureBox();
+            ((System.ComponentModel.ISupportInitialize)picURIPUI).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxURIPUI).BeginInit();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(35, 35);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Enter 2 values ";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(35, 35);
+            label1.Name = "label1";
+            label1.Size = new Size(156, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Enter 2 values ";
             // 
             // lblVoltage
             // 
-            this.lblVoltage.AutoSize = true;
-            this.lblVoltage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblVoltage.Location = new System.Drawing.Point(35, 103);
-            this.lblVoltage.Name = "lblVoltage";
-            this.lblVoltage.Size = new System.Drawing.Size(101, 22);
-            this.lblVoltage.TabIndex = 1;
-            this.lblVoltage.Text = "U (Voltage)";
+            lblVoltage.AutoSize = true;
+            lblVoltage.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblVoltage.Location = new Point(35, 103);
+            lblVoltage.Name = "lblVoltage";
+            lblVoltage.Size = new Size(101, 22);
+            lblVoltage.TabIndex = 1;
+            lblVoltage.Text = "U (Voltage)";
             // 
             // lblCurrent
             // 
-            this.lblCurrent.AutoSize = true;
-            this.lblCurrent.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblCurrent.Location = new System.Drawing.Point(35, 155);
-            this.lblCurrent.Name = "lblCurrent";
-            this.lblCurrent.Size = new System.Drawing.Size(91, 22);
-            this.lblCurrent.TabIndex = 2;
-            this.lblCurrent.Text = "I (Current)";
+            lblCurrent.AutoSize = true;
+            lblCurrent.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblCurrent.Location = new Point(35, 155);
+            lblCurrent.Name = "lblCurrent";
+            lblCurrent.Size = new Size(91, 22);
+            lblCurrent.TabIndex = 2;
+            lblCurrent.Text = "I (Current)";
             // 
             // lblR
             // 
-            this.lblR.AutoSize = true;
-            this.lblR.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblR.Location = new System.Drawing.Point(35, 207);
-            this.lblR.Name = "lblR";
-            this.lblR.Size = new System.Drawing.Size(129, 22);
-            this.lblR.TabIndex = 3;
-            this.lblR.Text = "R (Resistance)";
+            lblR.AutoSize = true;
+            lblR.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblR.Location = new Point(35, 207);
+            lblR.Name = "lblR";
+            lblR.Size = new Size(129, 22);
+            lblR.TabIndex = 3;
+            lblR.Text = "R (Resistance)";
             // 
             // lblWattage
             // 
-            this.lblWattage.AutoSize = true;
-            this.lblWattage.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.lblWattage.Location = new System.Drawing.Point(35, 262);
-            this.lblWattage.Name = "lblWattage";
-            this.lblWattage.Size = new System.Drawing.Size(172, 22);
-            this.lblWattage.TabIndex = 4;
-            this.lblWattage.Text = "P (Power / Wattage)";
+            lblWattage.AutoSize = true;
+            lblWattage.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            lblWattage.Location = new Point(35, 262);
+            lblWattage.Name = "lblWattage";
+            lblWattage.Size = new Size(172, 22);
+            lblWattage.TabIndex = 4;
+            lblWattage.Text = "P (Power / Wattage)";
             // 
             // txtVoltage
             // 
-            this.txtVoltage.Location = new System.Drawing.Point(254, 103);
-            this.txtVoltage.Name = "txtVoltage";
-            this.txtVoltage.Size = new System.Drawing.Size(150, 31);
-            this.txtVoltage.TabIndex = 5;
+            txtVoltage.Location = new Point(254, 103);
+            txtVoltage.Name = "txtVoltage";
+            txtVoltage.Size = new Size(150, 31);
+            txtVoltage.TabIndex = 5;
             // 
             // txtCurrent
             // 
-            this.txtCurrent.Location = new System.Drawing.Point(254, 155);
-            this.txtCurrent.Name = "txtCurrent";
-            this.txtCurrent.Size = new System.Drawing.Size(150, 31);
-            this.txtCurrent.TabIndex = 6;
+            txtCurrent.Location = new Point(254, 155);
+            txtCurrent.Name = "txtCurrent";
+            txtCurrent.Size = new Size(150, 31);
+            txtCurrent.TabIndex = 6;
             // 
             // txtR
             // 
-            this.txtR.Location = new System.Drawing.Point(254, 207);
-            this.txtR.Name = "txtR";
-            this.txtR.Size = new System.Drawing.Size(150, 31);
-            this.txtR.TabIndex = 7;
+            txtR.Location = new Point(254, 207);
+            txtR.Name = "txtR";
+            txtR.Size = new Size(150, 31);
+            txtR.TabIndex = 7;
             // 
             // txtWattage
             // 
-            this.txtWattage.Location = new System.Drawing.Point(254, 262);
-            this.txtWattage.Name = "txtWattage";
-            this.txtWattage.Size = new System.Drawing.Size(150, 31);
-            this.txtWattage.TabIndex = 8;
+            txtWattage.Location = new Point(254, 262);
+            txtWattage.Name = "txtWattage";
+            txtWattage.Size = new Size(150, 31);
+            txtWattage.TabIndex = 8;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label2.Location = new System.Drawing.Point(410, 108);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(79, 22);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "V (Volts)";
+            label2.AutoSize = true;
+            label2.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label2.Location = new Point(410, 108);
+            label2.Name = "label2";
+            label2.Size = new Size(79, 22);
+            label2.TabIndex = 9;
+            label2.Text = "V (Volts)";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label3.Location = new System.Drawing.Point(410, 160);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(101, 22);
-            this.label3.TabIndex = 10;
-            this.label3.Text = "A (Ampere)";
+            label3.AutoSize = true;
+            label3.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label3.Location = new Point(410, 160);
+            label3.Name = "label3";
+            label3.Size = new Size(101, 22);
+            label3.TabIndex = 10;
+            label3.Text = "A (Ampere)";
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label4.Location = new System.Drawing.Point(410, 35);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 25);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "Unit";
+            label4.AutoSize = true;
+            label4.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(410, 35);
+            label4.Name = "label4";
+            label4.Size = new Size(50, 25);
+            label4.TabIndex = 11;
+            label4.Text = "Unit";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label5.Location = new System.Drawing.Point(410, 212);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(79, 22);
-            this.label5.TabIndex = 12;
-            this.label5.Text = "Ω (Ohm)";
+            label5.AutoSize = true;
+            label5.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label5.Location = new Point(410, 212);
+            label5.Name = "label5";
+            label5.Size = new Size(79, 22);
+            label5.TabIndex = 12;
+            label5.Text = "Ω (Ohm)";
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.label6.Location = new System.Drawing.Point(410, 267);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 22);
-            this.label6.TabIndex = 13;
-            this.label6.Text = "W (Watt)";
+            label6.AutoSize = true;
+            label6.Font = new Font("Microsoft Sans Serif", 9F, FontStyle.Regular, GraphicsUnit.Point);
+            label6.Location = new Point(410, 267);
+            label6.Name = "label6";
+            label6.Size = new Size(81, 22);
+            label6.TabIndex = 13;
+            label6.Text = "W (Watt)";
             // 
             // btnCalcOhmLaw
             // 
-            this.btnCalcOhmLaw.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.btnCalcOhmLaw.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.btnCalcOhmLaw.Location = new System.Drawing.Point(254, 328);
-            this.btnCalcOhmLaw.Name = "btnCalcOhmLaw";
-            this.btnCalcOhmLaw.Size = new System.Drawing.Size(150, 52);
-            this.btnCalcOhmLaw.TabIndex = 28;
-            this.btnCalcOhmLaw.Text = "Calculate";
-            this.btnCalcOhmLaw.UseVisualStyleBackColor = false;
-            this.btnCalcOhmLaw.Click += new System.EventHandler(this.btnCalcOhmLaw_Click);
+            btnCalcOhmLaw.BackColor = SystemColors.ActiveCaption;
+            btnCalcOhmLaw.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            btnCalcOhmLaw.Location = new Point(254, 328);
+            btnCalcOhmLaw.Name = "btnCalcOhmLaw";
+            btnCalcOhmLaw.Size = new Size(150, 52);
+            btnCalcOhmLaw.TabIndex = 28;
+            btnCalcOhmLaw.Text = "Calculate";
+            btnCalcOhmLaw.UseVisualStyleBackColor = false;
+            btnCalcOhmLaw.Click += btnCalcOhmLaw_Click;
             // 
             // btnClearOhmLaw
             // 
-            this.btnClearOhmLaw.Location = new System.Drawing.Point(254, 392);
-            this.btnClearOhmLaw.Name = "btnClearOhmLaw";
-            this.btnClearOhmLaw.Size = new System.Drawing.Size(150, 35);
-            this.btnClearOhmLaw.TabIndex = 29;
-            this.btnClearOhmLaw.Text = "Clear";
-            this.btnClearOhmLaw.UseVisualStyleBackColor = true;
-            this.btnClearOhmLaw.Click += new System.EventHandler(this.btnClearOhmLaw_Click);
+            btnClearOhmLaw.Location = new Point(254, 392);
+            btnClearOhmLaw.Name = "btnClearOhmLaw";
+            btnClearOhmLaw.Size = new Size(150, 35);
+            btnClearOhmLaw.TabIndex = 29;
+            btnClearOhmLaw.Text = "Clear";
+            btnClearOhmLaw.UseVisualStyleBackColor = true;
+            btnClearOhmLaw.Click += btnClearOhmLaw_Click;
             // 
             // picURIPUI
             // 
-            this.picURIPUI.Image = ((System.Drawing.Image)(resources.GetObject("picURIPUI.Image")));
-            this.picURIPUI.Location = new System.Drawing.Point(538, 35);
-            this.picURIPUI.Name = "picURIPUI";
-            this.picURIPUI.Size = new System.Drawing.Size(449, 441);
-            this.picURIPUI.TabIndex = 30;
-            this.picURIPUI.TabStop = false;
+            picURIPUI.Image = (Image)resources.GetObject("picURIPUI.Image");
+            picURIPUI.Location = new Point(538, 35);
+            picURIPUI.Name = "picURIPUI";
+            picURIPUI.Size = new Size(449, 441);
+            picURIPUI.SizeMode = PictureBoxSizeMode.Zoom;
+            picURIPUI.TabIndex = 30;
+            picURIPUI.TabStop = false;
             // 
             // picBoxURIPUI
             // 
-            this.picBoxURIPUI.Image = ((System.Drawing.Image)(resources.GetObject("picBoxURIPUI.Image")));
-            this.picBoxURIPUI.Location = new System.Drawing.Point(488, 35);
-            this.picBoxURIPUI.Name = "picBoxURIPUI";
-            this.picBoxURIPUI.Size = new System.Drawing.Size(32, 32);
-            this.picBoxURIPUI.TabIndex = 31;
-            this.picBoxURIPUI.TabStop = false;
-            this.picBoxURIPUI.Click += new System.EventHandler(this.picBoxURIPUI_Click);
+            picBoxURIPUI.Image = (Image)resources.GetObject("picBoxURIPUI.Image");
+            picBoxURIPUI.Location = new Point(488, 35);
+            picBoxURIPUI.Name = "picBoxURIPUI";
+            picBoxURIPUI.Size = new Size(32, 32);
+            picBoxURIPUI.SizeMode = PictureBoxSizeMode.Zoom;
+            picBoxURIPUI.TabIndex = 31;
+            picBoxURIPUI.TabStop = false;
+            picBoxURIPUI.Click += picBoxURIPUI_Click;
             // 
             // FormElectrical
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 579);
-            this.Controls.Add(this.picBoxURIPUI);
-            this.Controls.Add(this.picURIPUI);
-            this.Controls.Add(this.btnClearOhmLaw);
-            this.Controls.Add(this.btnCalcOhmLaw);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.txtWattage);
-            this.Controls.Add(this.txtR);
-            this.Controls.Add(this.txtCurrent);
-            this.Controls.Add(this.txtVoltage);
-            this.Controls.Add(this.lblWattage);
-            this.Controls.Add(this.lblR);
-            this.Controls.Add(this.lblCurrent);
-            this.Controls.Add(this.lblVoltage);
-            this.Controls.Add(this.label1);
-            this.Name = "FormElectrical";
-            this.Text = "Electrical Formulas";
-            ((System.ComponentModel.ISupportInitialize)(this.picURIPUI)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.picBoxURIPUI)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(999, 579);
+            Controls.Add(picBoxURIPUI);
+            Controls.Add(picURIPUI);
+            Controls.Add(btnClearOhmLaw);
+            Controls.Add(btnCalcOhmLaw);
+            Controls.Add(label6);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(label2);
+            Controls.Add(txtWattage);
+            Controls.Add(txtR);
+            Controls.Add(txtCurrent);
+            Controls.Add(txtVoltage);
+            Controls.Add(lblWattage);
+            Controls.Add(lblR);
+            Controls.Add(lblCurrent);
+            Controls.Add(lblVoltage);
+            Controls.Add(label1);
+            Name = "FormElectrical";
+            Text = "Electrical Formulas";
+            ((System.ComponentModel.ISupportInitialize)picURIPUI).EndInit();
+            ((System.ComponentModel.ISupportInitialize)picBoxURIPUI).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
