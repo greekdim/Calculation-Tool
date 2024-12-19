@@ -77,7 +77,7 @@
             panelMenu.Location = new Point(0, 0);
             panelMenu.MinimumSize = new Size(226, 700);
             panelMenu.Name = "panelMenu";
-            panelMenu.Size = new Size(226, 717);
+            panelMenu.Size = new Size(226, 724);
             panelMenu.TabIndex = 0;
             // 
             // label2
@@ -86,7 +86,7 @@
             label2.Dock = DockStyle.Bottom;
             label2.Font = new Font("Dubai", 7F, FontStyle.Italic, GraphicsUnit.Point);
             label2.ForeColor = Color.White;
-            label2.Location = new Point(0, 693);
+            label2.Location = new Point(0, 700);
             label2.Name = "label2";
             label2.Size = new Size(183, 24);
             label2.TabIndex = 1;
@@ -281,7 +281,7 @@
             panelTitleBar.Dock = DockStyle.Top;
             panelTitleBar.Location = new Point(226, 0);
             panelTitleBar.Name = "panelTitleBar";
-            panelTitleBar.Size = new Size(1026, 100);
+            panelTitleBar.Size = new Size(1025, 100);
             panelTitleBar.TabIndex = 1;
             panelTitleBar.MouseDown += panelTitleBar_MouseDown;
             // 
@@ -308,7 +308,7 @@
             btnMinimize.FlatStyle = FlatStyle.Flat;
             btnMinimize.Font = new Font("Calibri", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnMinimize.ForeColor = Color.White;
-            btnMinimize.Location = new Point(909, 3);
+            btnMinimize.Location = new Point(908, 3);
             btnMinimize.Name = "btnMinimize";
             btnMinimize.Size = new Size(34, 72);
             btnMinimize.TabIndex = 3;
@@ -324,7 +324,7 @@
             btnClose.FlatStyle = FlatStyle.Flat;
             btnClose.Font = new Font("Calibri", 13F, FontStyle.Regular, GraphicsUnit.Point);
             btnClose.ForeColor = Color.White;
-            btnClose.Location = new Point(990, 2);
+            btnClose.Location = new Point(988, 2);
             btnClose.Name = "btnClose";
             btnClose.Size = new Size(34, 98);
             btnClose.TabIndex = 2;
@@ -352,7 +352,7 @@
             lblTitle.AutoSize = true;
             lblTitle.Font = new Font("Arial", 16F, FontStyle.Bold, GraphicsUnit.Point);
             lblTitle.ForeColor = Color.White;
-            lblTitle.Location = new Point(456, 33);
+            lblTitle.Location = new Point(450, 33);
             lblTitle.Name = "lblTitle";
             lblTitle.Size = new Size(111, 37);
             lblTitle.TabIndex = 0;
@@ -369,14 +369,14 @@
             panelDesktopPane.Dock = DockStyle.Top;
             panelDesktopPane.Location = new Point(226, 100);
             panelDesktopPane.Name = "panelDesktopPane";
-            panelDesktopPane.Size = new Size(1026, 634);
+            panelDesktopPane.Size = new Size(1025, 670);
             panelDesktopPane.TabIndex = 2;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.Location = new Point(306, 196);
+            label5.Location = new Point(306, 197);
             label5.Name = "label5";
             label5.Size = new Size(423, 25);
             label5.TabIndex = 4;
@@ -395,7 +395,7 @@
             // label3
             // 
             label3.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Regular, GraphicsUnit.Point);
-            label3.Location = new Point(306, 76);
+            label3.Location = new Point(306, 77);
             label3.Name = "label3";
             label3.Size = new Size(717, 87);
             label3.TabIndex = 2;
@@ -425,14 +425,14 @@
             // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(144F, 144F);
-            AutoScaleMode = AutoScaleMode.Dpi;
-            ClientSize = new Size(1252, 717);
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1251, 724);
             Controls.Add(panelDesktopPane);
             Controls.Add(panelTitleBar);
             Controls.Add(panelMenu);
             Icon = (Icon)resources.GetObject("$this.Icon");
-            MinimumSize = new Size(1266, 748);
+            MinimumSize = new Size(1251, 616);
             Name = "Form1";
             Text = "Form1";
             Load += Form1_Load;

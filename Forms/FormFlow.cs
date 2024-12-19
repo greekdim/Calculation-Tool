@@ -23,7 +23,7 @@ namespace Calc_Tool___Rev_A.Forms
             // Calculs Cv Kv Orifice
             InitializeComponent();
             lblResult1.Text = "";
-            comboBoxCvKvOr.SelectedIndex = 1;
+            comboBoxCvKvOr.SelectedIndex = 0;
 
             // Calculs Débit - Cv or Flow
             // Ajouter un événement CheckedChanged pour les RadioButtons
@@ -98,7 +98,7 @@ namespace Calc_Tool___Rev_A.Forms
             txtValueToCalc.Enabled = true;
 
             // Réinitialiser la ComboBox à l'index 1
-            comboBoxCvKvOr.SelectedIndex = 1;
+            comboBoxCvKvOr.SelectedIndex = 0;
 
             // Vider les champs de texte
             txtValueToCalc.Text = string.Empty;

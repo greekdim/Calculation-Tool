@@ -28,271 +28,269 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label1 = new System.Windows.Forms.Label();
-            this.linkLabelMacWebsite = new System.Windows.Forms.LinkLabel();
-            this.label2 = new System.Windows.Forms.Label();
-            this.linkLabelDrawing = new System.Windows.Forms.LinkLabel();
-            this.label3 = new System.Windows.Forms.Label();
-            this.linkLabelWinsite = new System.Windows.Forms.LinkLabel();
-            this.linkLabelFunnel = new System.Windows.Forms.LinkLabel();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.linkLabelBox = new System.Windows.Forms.LinkLabel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.linkLabelTeesing = new System.Windows.Forms.LinkLabel();
-            this.label7 = new System.Windows.Forms.Label();
-            this.linkLabeleDrawings = new System.Windows.Forms.LinkLabel();
-            this.label8 = new System.Windows.Forms.Label();
-            this.linkLabelPico = new System.Windows.Forms.LinkLabel();
-            this.label9 = new System.Windows.Forms.Label();
-            this.linkLabelKubotek = new System.Windows.Forms.LinkLabel();
-            this.label10 = new System.Windows.Forms.Label();
-            this.linkLabelIAMeeting = new System.Windows.Forms.LinkLabel();
-            this.label11 = new System.Windows.Forms.Label();
-            this.SuspendLayout();
+            label1 = new Label();
+            linkLabelMacWebsite = new LinkLabel();
+            label2 = new Label();
+            linkLabelDrawing = new LinkLabel();
+            label3 = new Label();
+            linkLabelWinsite = new LinkLabel();
+            linkLabelFunnel = new LinkLabel();
+            label4 = new Label();
+            label5 = new Label();
+            linkLabelBox = new LinkLabel();
+            label6 = new Label();
+            linkLabelTeesing = new LinkLabel();
+            label7 = new Label();
+            linkLabeleDrawings = new LinkLabel();
+            label8 = new Label();
+            linkLabelPico = new LinkLabel();
+            label9 = new Label();
+            linkLabelKubotek = new LinkLabel();
+            label10 = new Label();
+            linkLabelIAMeeting = new LinkLabel();
+            label11 = new Label();
+            SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
-            this.label1.Location = new System.Drawing.Point(27, 31);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(243, 25);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Useful Tools day-to-day";
+            label1.AutoSize = true;
+            label1.Font = new Font("Microsoft Sans Serif", 10F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(27, 32);
+            label1.Name = "label1";
+            label1.Size = new Size(243, 25);
+            label1.TabIndex = 0;
+            label1.Text = "Useful Tools day-to-day";
             // 
             // linkLabelMacWebsite
             // 
-            this.linkLabelMacWebsite.AutoSize = true;
-            this.linkLabelMacWebsite.Location = new System.Drawing.Point(27, 67);
-            this.linkLabelMacWebsite.Name = "linkLabelMacWebsite";
-            this.linkLabelMacWebsite.Size = new System.Drawing.Size(205, 25);
-            this.linkLabelMacWebsite.TabIndex = 1;
-            this.linkLabelMacWebsite.TabStop = true;
-            this.linkLabelMacWebsite.Text = "Visit Mac Valves Website";
-            this.linkLabelMacWebsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelMacWebsite_LinkClicked);
+            linkLabelMacWebsite.AutoSize = true;
+            linkLabelMacWebsite.Location = new Point(27, 67);
+            linkLabelMacWebsite.Name = "linkLabelMacWebsite";
+            linkLabelMacWebsite.Size = new Size(205, 25);
+            linkLabelMacWebsite.TabIndex = 1;
+            linkLabelMacWebsite.TabStop = true;
+            linkLabelMacWebsite.Text = "Visit Mac Valves Website";
+            linkLabelMacWebsite.LinkClicked += linkLabelMacWebsite_LinkClicked;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(257, 67);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(731, 25);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Find on it valve series catalogs, product warranty, MAC lubricants, compliance do" +
-    "cuments...";
+            label2.AutoSize = true;
+            label2.Location = new Point(257, 67);
+            label2.Name = "label2";
+            label2.Size = new Size(731, 25);
+            label2.TabIndex = 2;
+            label2.Text = "Find on it valve series catalogs, product warranty, MAC lubricants, compliance documents...";
             // 
             // linkLabelDrawing
             // 
-            this.linkLabelDrawing.AutoSize = true;
-            this.linkLabelDrawing.Location = new System.Drawing.Point(27, 107);
-            this.linkLabelDrawing.Name = "linkLabelDrawing";
-            this.linkLabelDrawing.Size = new System.Drawing.Size(130, 25);
-            this.linkLabelDrawing.TabIndex = 3;
-            this.linkLabelDrawing.TabStop = true;
-            this.linkLabelDrawing.Text = "CAD generator";
-            this.linkLabelDrawing.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelDrawing_LinkClicked);
+            linkLabelDrawing.AutoSize = true;
+            linkLabelDrawing.Location = new Point(27, 95);
+            linkLabelDrawing.Name = "linkLabelDrawing";
+            linkLabelDrawing.Size = new Size(130, 25);
+            linkLabelDrawing.TabIndex = 3;
+            linkLabelDrawing.TabStop = true;
+            linkLabelDrawing.Text = "CAD generator";
+            linkLabelDrawing.LinkClicked += linkLabelDrawing_LinkClicked;
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(257, 107);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(578, 25);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Get your valve/manifold drawing building your codification (step file, ...)";
+            label3.AutoSize = true;
+            label3.Location = new Point(257, 95);
+            label3.Name = "label3";
+            label3.Size = new Size(578, 25);
+            label3.TabIndex = 4;
+            label3.Text = "Get your valve/manifold drawing building your codification (step file, ...)";
             // 
             // linkLabelWinsite
             // 
-            this.linkLabelWinsite.AutoSize = true;
-            this.linkLabelWinsite.Location = new System.Drawing.Point(27, 153);
-            this.linkLabelWinsite.Name = "linkLabelWinsite";
-            this.linkLabelWinsite.Size = new System.Drawing.Size(116, 25);
-            this.linkLabelWinsite.TabIndex = 5;
-            this.linkLabelWinsite.TabStop = true;
-            this.linkLabelWinsite.Text = "MAC WinSite";
-            this.linkLabelWinsite.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelWinsite_LinkClicked);
+            linkLabelWinsite.AutoSize = true;
+            linkLabelWinsite.Location = new Point(27, 125);
+            linkLabelWinsite.Name = "linkLabelWinsite";
+            linkLabelWinsite.Size = new Size(116, 25);
+            linkLabelWinsite.TabIndex = 5;
+            linkLabelWinsite.TabStop = true;
+            linkLabelWinsite.Text = "MAC WinSite";
+            linkLabelWinsite.LinkClicked += linkLabelWinsite_LinkClicked;
             // 
             // linkLabelFunnel
             // 
-            this.linkLabelFunnel.AutoSize = true;
-            this.linkLabelFunnel.Location = new System.Drawing.Point(27, 200);
-            this.linkLabelFunnel.Name = "linkLabelFunnel";
-            this.linkLabelFunnel.Size = new System.Drawing.Size(105, 25);
-            this.linkLabelFunnel.TabIndex = 6;
-            this.linkLabelFunnel.TabStop = true;
-            this.linkLabelFunnel.Text = "Funnel MVE";
-            this.linkLabelFunnel.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelFunnel_LinkClicked);
+            linkLabelFunnel.AutoSize = true;
+            linkLabelFunnel.Location = new Point(27, 153);
+            linkLabelFunnel.Name = "linkLabelFunnel";
+            linkLabelFunnel.Size = new Size(105, 25);
+            linkLabelFunnel.TabIndex = 6;
+            linkLabelFunnel.TabStop = true;
+            linkLabelFunnel.Text = "Funnel MVE";
+            linkLabelFunnel.LinkClicked += linkLabelFunnel_LinkClicked;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(257, 153);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(304, 25);
-            this.label4.TabIndex = 7;
-            this.label4.Text = "Find wins to duplicate on the Winsite";
+            label4.AutoSize = true;
+            label4.Location = new Point(257, 123);
+            label4.Name = "label4";
+            label4.Size = new Size(304, 25);
+            label4.TabIndex = 7;
+            label4.Text = "Find wins to duplicate on the Winsite";
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(257, 200);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 25);
-            this.label5.TabIndex = 8;
-            this.label5.Text = "Complete your funnel ";
+            label5.AutoSize = true;
+            label5.Location = new Point(257, 148);
+            label5.Name = "label5";
+            label5.Size = new Size(189, 25);
+            label5.TabIndex = 8;
+            label5.Text = "Complete your funnel ";
             // 
             // linkLabelBox
             // 
-            this.linkLabelBox.AutoSize = true;
-            this.linkLabelBox.Location = new System.Drawing.Point(27, 249);
-            this.linkLabelBox.Name = "linkLabelBox";
-            this.linkLabelBox.Size = new System.Drawing.Size(52, 25);
-            this.linkLabelBox.TabIndex = 9;
-            this.linkLabelBox.TabStop = true;
-            this.linkLabelBox.Text = "BOX ";
-            this.linkLabelBox.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelBox_LinkClicked);
+            linkLabelBox.AutoSize = true;
+            linkLabelBox.Location = new Point(27, 182);
+            linkLabelBox.Name = "linkLabelBox";
+            linkLabelBox.Size = new Size(52, 25);
+            linkLabelBox.TabIndex = 9;
+            linkLabelBox.TabStop = true;
+            linkLabelBox.Text = "BOX ";
+            linkLabelBox.LinkClicked += linkLabelBox_LinkClicked;
             // 
             // label6
             // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(257, 249);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(616, 25);
-            this.label6.TabIndex = 10;
-            this.label6.Text = "Check out MAC documents on the cloud such as: white papers, brochures, ...";
+            label6.AutoSize = true;
+            label6.Location = new Point(257, 175);
+            label6.Name = "label6";
+            label6.Size = new Size(616, 25);
+            label6.TabIndex = 10;
+            label6.Text = "Check out MAC documents on the cloud such as: white papers, brochures, ...";
             // 
             // linkLabelTeesing
             // 
-            this.linkLabelTeesing.AutoSize = true;
-            this.linkLabelTeesing.Location = new System.Drawing.Point(27, 302);
-            this.linkLabelTeesing.Name = "linkLabelTeesing";
-            this.linkLabelTeesing.Size = new System.Drawing.Size(188, 25);
-            this.linkLabelTeesing.TabIndex = 11;
-            this.linkLabelTeesing.TabStop = true;
-            this.linkLabelTeesing.Text = "Online Flow Claculator";
-            this.linkLabelTeesing.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelTeesing_LinkClicked);
+            linkLabelTeesing.AutoSize = true;
+            linkLabelTeesing.Location = new Point(27, 228);
+            linkLabelTeesing.Name = "linkLabelTeesing";
+            linkLabelTeesing.Size = new Size(188, 25);
+            linkLabelTeesing.TabIndex = 11;
+            linkLabelTeesing.TabStop = true;
+            linkLabelTeesing.Text = "Online Flow Claculator";
+            linkLabelTeesing.LinkClicked += linkLabelTeesing_LinkClicked;
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(257, 302);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(346, 25);
-            this.label7.TabIndex = 12;
-            this.label7.Text = "Calculate valve Cv, liquid and air flow rates";
+            label7.AutoSize = true;
+            label7.Location = new Point(257, 228);
+            label7.Name = "label7";
+            label7.Size = new Size(346, 25);
+            label7.TabIndex = 12;
+            label7.Text = "Calculate valve Cv, liquid and air flow rates";
             // 
             // linkLabeleDrawings
             // 
-            this.linkLabeleDrawings.AutoSize = true;
-            this.linkLabeleDrawings.Location = new System.Drawing.Point(27, 356);
-            this.linkLabeleDrawings.Name = "linkLabeleDrawings";
-            this.linkLabeleDrawings.Size = new System.Drawing.Size(95, 25);
-            this.linkLabeleDrawings.TabIndex = 13;
-            this.linkLabeleDrawings.TabStop = true;
-            this.linkLabeleDrawings.Text = "eDrawings";
-            this.linkLabeleDrawings.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabeleDrawings_LinkClicked);
+            linkLabeleDrawings.AutoSize = true;
+            linkLabeleDrawings.Location = new Point(27, 275);
+            linkLabeleDrawings.Name = "linkLabeleDrawings";
+            linkLabeleDrawings.Size = new Size(95, 25);
+            linkLabeleDrawings.TabIndex = 13;
+            linkLabeleDrawings.TabStop = true;
+            linkLabeleDrawings.Text = "eDrawings";
+            linkLabeleDrawings.LinkClicked += linkLabeleDrawings_LinkClicked;
             // 
             // label8
             // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(257, 356);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(465, 25);
-            this.label8.TabIndex = 14;
-            this.label8.Text = "Download eDrawings to see 3D models such as step files";
+            label8.AutoSize = true;
+            label8.Location = new Point(257, 275);
+            label8.Name = "label8";
+            label8.Size = new Size(465, 25);
+            label8.TabIndex = 14;
+            label8.Text = "Download eDrawings to see 3D models such as step files";
             // 
             // linkLabelPico
             // 
-            this.linkLabelPico.AutoSize = true;
-            this.linkLabelPico.Location = new System.Drawing.Point(27, 407);
-            this.linkLabelPico.Name = "linkLabelPico";
-            this.linkLabelPico.Size = new System.Drawing.Size(167, 25);
-            this.linkLabelPico.TabIndex = 15;
-            this.linkLabelPico.TabStop = true;
-            this.linkLabelPico.Text = "Picoscope Software";
-            this.linkLabelPico.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelPico_LinkClicked);
+            linkLabelPico.AutoSize = true;
+            linkLabelPico.Location = new Point(27, 303);
+            linkLabelPico.Name = "linkLabelPico";
+            linkLabelPico.Size = new Size(167, 25);
+            linkLabelPico.TabIndex = 15;
+            linkLabelPico.TabStop = true;
+            linkLabelPico.Text = "Picoscope Software";
+            linkLabelPico.LinkClicked += linkLabelPico_LinkClicked;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(257, 407);
-            this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(539, 25);
-            this.label9.TabIndex = 16;
-            this.label9.Text = "Download Picoscope software to use your Traveller Demo Kit (TLD)\r\n";
+            label9.AutoSize = true;
+            label9.Location = new Point(257, 305);
+            label9.Name = "label9";
+            label9.Size = new Size(539, 25);
+            label9.TabIndex = 16;
+            label9.Text = "Download Picoscope software to use your Traveller Demo Kit (TLD)\r\n";
             // 
             // linkLabelKubotek
             // 
-            this.linkLabelKubotek.AutoSize = true;
-            this.linkLabelKubotek.Location = new System.Drawing.Point(27, 459);
-            this.linkLabelKubotek.Name = "linkLabelKubotek";
-            this.linkLabelKubotek.Size = new System.Drawing.Size(78, 25);
-            this.linkLabelKubotek.TabIndex = 17;
-            this.linkLabelKubotek.TabStop = true;
-            this.linkLabelKubotek.Text = "Kubotek";
-            this.linkLabelKubotek.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelKubotek_LinkClicked);
+            linkLabelKubotek.AutoSize = true;
+            linkLabelKubotek.Location = new Point(27, 332);
+            linkLabelKubotek.Name = "linkLabelKubotek";
+            linkLabelKubotek.Size = new Size(78, 25);
+            linkLabelKubotek.TabIndex = 17;
+            linkLabelKubotek.TabStop = true;
+            linkLabelKubotek.Text = "Kubotek";
+            linkLabelKubotek.LinkClicked += linkLabelKubotek_LinkClicked;
             // 
             // label10
             // 
-            this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(257, 459);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(371, 25);
-            this.label10.TabIndex = 18;
-            this.label10.Text = "Download Kubotek to read CKD drawing files";
+            label10.AutoSize = true;
+            label10.Location = new Point(257, 332);
+            label10.Name = "label10";
+            label10.Size = new Size(371, 25);
+            label10.TabIndex = 18;
+            label10.Text = "Download Kubotek to read CKD drawing files";
             // 
             // linkLabelIAMeeting
             // 
-            this.linkLabelIAMeeting.AutoSize = true;
-            this.linkLabelIAMeeting.Location = new System.Drawing.Point(27, 512);
-            this.linkLabelIAMeeting.Name = "linkLabelIAMeeting";
-            this.linkLabelIAMeeting.Size = new System.Drawing.Size(178, 25);
-            this.linkLabelIAMeeting.TabIndex = 19;
-            this.linkLabelIAMeeting.TabStop = true;
-            this.linkLabelIAMeeting.Text = "IA meeting summary";
-            this.linkLabelIAMeeting.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.linkLabelIAMeeting_LinkClicked);
+            linkLabelIAMeeting.AutoSize = true;
+            linkLabelIAMeeting.Location = new Point(27, 462);
+            linkLabelIAMeeting.Name = "linkLabelIAMeeting";
+            linkLabelIAMeeting.Size = new Size(178, 25);
+            linkLabelIAMeeting.TabIndex = 19;
+            linkLabelIAMeeting.TabStop = true;
+            linkLabelIAMeeting.Text = "IA meeting summary";
+            linkLabelIAMeeting.LinkClicked += linkLabelIAMeeting_LinkClicked;
             // 
             // label11
             // 
-            this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(257, 512);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(321, 25);
-            this.label11.TabIndex = 20;
-            this.label11.Text = "Try this IA to summarize your meetings";
+            label11.AutoSize = true;
+            label11.Location = new Point(257, 462);
+            label11.Name = "label11";
+            label11.Size = new Size(321, 25);
+            label11.TabIndex = 20;
+            label11.Text = "Try this IA to summarize your meetings";
             // 
             // FormMacWebsiteTools
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1000, 634);
-            this.Controls.Add(this.label11);
-            this.Controls.Add(this.linkLabelIAMeeting);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.linkLabelKubotek);
-            this.Controls.Add(this.label9);
-            this.Controls.Add(this.linkLabelPico);
-            this.Controls.Add(this.label8);
-            this.Controls.Add(this.linkLabeleDrawings);
-            this.Controls.Add(this.label7);
-            this.Controls.Add(this.linkLabelTeesing);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.linkLabelBox);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.linkLabelFunnel);
-            this.Controls.Add(this.linkLabelWinsite);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.linkLabelDrawing);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.linkLabelMacWebsite);
-            this.Controls.Add(this.label1);
-            this.Name = "FormMacWebsiteTools";
-            this.Text = "Mac Website Tools";
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(1000, 633);
+            Controls.Add(label11);
+            Controls.Add(linkLabelIAMeeting);
+            Controls.Add(label10);
+            Controls.Add(linkLabelKubotek);
+            Controls.Add(label9);
+            Controls.Add(linkLabelPico);
+            Controls.Add(label8);
+            Controls.Add(linkLabeleDrawings);
+            Controls.Add(label7);
+            Controls.Add(linkLabelTeesing);
+            Controls.Add(label6);
+            Controls.Add(linkLabelBox);
+            Controls.Add(label5);
+            Controls.Add(label4);
+            Controls.Add(linkLabelFunnel);
+            Controls.Add(linkLabelWinsite);
+            Controls.Add(label3);
+            Controls.Add(linkLabelDrawing);
+            Controls.Add(label2);
+            Controls.Add(linkLabelMacWebsite);
+            Controls.Add(label1);
+            Name = "FormMacWebsiteTools";
+            Text = "Mac Website Tools";
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion

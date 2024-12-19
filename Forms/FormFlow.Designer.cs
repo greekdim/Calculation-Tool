@@ -282,7 +282,7 @@
             // 
             panel4.BackColor = Color.FromArgb(202, 202, 238);
             panel4.Controls.Add(lblFlowResult);
-            panel4.Location = new Point(374, 524);
+            panel4.Location = new Point(374, 542);
             panel4.Name = "panel4";
             panel4.Size = new Size(268, 50);
             panel4.TabIndex = 28;
@@ -301,7 +301,7 @@
             // btnCalcFlow
             // 
             btnCalcFlow.BackColor = SystemColors.ActiveCaption;
-            btnCalcFlow.Location = new Point(218, 522);
+            btnCalcFlow.Location = new Point(218, 540);
             btnCalcFlow.Name = "btnCalcFlow";
             btnCalcFlow.Size = new Size(150, 52);
             btnCalcFlow.TabIndex = 27;
@@ -495,7 +495,7 @@
             // 
             // btnClear
             // 
-            btnClear.Location = new Point(688, 524);
+            btnClear.Location = new Point(688, 542);
             btnClear.Name = "btnClear";
             btnClear.Size = new Size(66, 52);
             btnClear.TabIndex = 31;

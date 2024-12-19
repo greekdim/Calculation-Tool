@@ -202,11 +202,7 @@ namespace Calc_Tool___Rev_A
 
         }
 
-        private void Form1_Load(object sender, EventArgs e)
-        {
-            // Ajuster les panneaux dès le chargement du formulaire
-            AdjustPanelSizes();
-        }
+
 
         private void AdjustPanelSizes()
         {
@@ -217,13 +213,58 @@ namespace Calc_Tool___Rev_A
             // Set the width of panelMenu and panelLogo to this calculated width
             panelMenu.Width = adjustedWidth;
             panelLogo.Width = adjustedWidth;
-        }
 
+            
+        }
+        private void AdjustButtonImageSize(Button btn)
+        {
+            // Obtenir l'image d'origine du bouton
+            Image originalImage = btn.Image;
+
+            // Taille du bouton
+            int buttonHeight = btn.Height;
+            int buttonWidth = btn.Width;
+
+            // Calculer la nouvelle taille de l'image pour qu'elle reste 2/3 de la hauteur du bouton
+            int newImageHeight = (int)(buttonHeight * 2.0 / 3.0);  // 2/3 de la hauteur du bouton
+            int newImageWidth = newImageHeight;  // Garder l'image carrée (40x40 => 1:1 ratio)
+
+            // Redimensionner l'image
+            Image resizedImage = new Bitmap(originalImage, new Size(newImageWidth, newImageHeight));
+
+            // Assigner l'image redimensionnée au bouton et la centrer
+            btn.Image = resizedImage;
+        }
+        private void AdjustAllButtonImages()
+        {
+            // Liste de tous les boutons
+            Button[] buttons = new Button[]
+            {
+        btnFlow, btnElec, btnLeakage, btnUnits, btnDutyCycle, btnVol, btnThreads, btnWebsiteTools
+            };
+
+            // Appliquer l'ajustement à chaque bouton
+            foreach (Button btn in buttons)
+            {
+                AdjustButtonImageSize(btn);
+            }
+        }
         private void Form1_Resize(object sender, EventArgs e)
         {
             // Ajuster les panneaux lors du redimensionnement
             AdjustPanelSizes();
+            AdjustAllButtonImages();
         }
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            // Ajuster les panneaux dès le chargement du formulaire
+            AdjustPanelSizes();
+
+            AdjustAllButtonImages();
+        }
+
+
+
     }
 
 }

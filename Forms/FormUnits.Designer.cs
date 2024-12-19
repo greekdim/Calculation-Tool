@@ -28,87 +28,82 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.cbTypeUnit = new System.Windows.Forms.ComboBox();
-            this.txtUnit1 = new System.Windows.Forms.TextBox();
-            this.txtUnit2 = new System.Windows.Forms.TextBox();
-            this.cBUnit1 = new System.Windows.Forms.ComboBox();
-            this.cBUnit2 = new System.Windows.Forms.ComboBox();
-            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
-            this.SuspendLayout();
+            components = new System.ComponentModel.Container();
+            cbTypeUnit = new ComboBox();
+            txtUnit1 = new TextBox();
+            txtUnit2 = new TextBox();
+            cBUnit1 = new ComboBox();
+            cBUnit2 = new ComboBox();
+            errorProvider1 = new ErrorProvider(components);
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).BeginInit();
+            SuspendLayout();
             // 
             // cbTypeUnit
             // 
-            this.cbTypeUnit.FormattingEnabled = true;
-            this.cbTypeUnit.Items.AddRange(new object[] {
-            "Length",
-            "Area",
-            "Volume",
-            "Pressure",
-            "Temperature",
-            "Air flow",
-            "Liquid flow"});
-            this.cbTypeUnit.Location = new System.Drawing.Point(45, 45);
-            this.cbTypeUnit.Name = "cbTypeUnit";
-            this.cbTypeUnit.Size = new System.Drawing.Size(418, 33);
-            this.cbTypeUnit.TabIndex = 17;
-            this.cbTypeUnit.SelectedIndexChanged += new System.EventHandler(this.cbTypeUnit_SelectedIndexChanged);
+            cbTypeUnit.DropDownStyle = ComboBoxStyle.DropDownList;
+            cbTypeUnit.FormattingEnabled = true;
+            cbTypeUnit.Items.AddRange(new object[] { "Length", "Area", "Volume", "Pressure", "Temperature", "Air flow", "Liquid flow" });
+            cbTypeUnit.Location = new Point(45, 45);
+            cbTypeUnit.Name = "cbTypeUnit";
+            cbTypeUnit.Size = new Size(418, 33);
+            cbTypeUnit.TabIndex = 17;
+            cbTypeUnit.SelectedIndexChanged += cbTypeUnit_SelectedIndexChanged;
             // 
             // txtUnit1
             // 
-            this.txtUnit1.Location = new System.Drawing.Point(45, 115);
-            this.txtUnit1.Name = "txtUnit1";
-            this.txtUnit1.Size = new System.Drawing.Size(182, 31);
-            this.txtUnit1.TabIndex = 18;
-            this.txtUnit1.TextChanged += new System.EventHandler(this.txtUnit1_TextChanged);
+            txtUnit1.Location = new Point(45, 115);
+            txtUnit1.Name = "txtUnit1";
+            txtUnit1.Size = new Size(182, 31);
+            txtUnit1.TabIndex = 18;
+            txtUnit1.TextChanged += txtUnit1_TextChanged;
             // 
             // txtUnit2
             // 
-            this.txtUnit2.Location = new System.Drawing.Point(281, 115);
-            this.txtUnit2.Name = "txtUnit2";
-            this.txtUnit2.Size = new System.Drawing.Size(182, 31);
-            this.txtUnit2.TabIndex = 19;
-            this.txtUnit2.TextChanged += new System.EventHandler(this.txtUnit2_TextChanged);
+            txtUnit2.Location = new Point(281, 115);
+            txtUnit2.Name = "txtUnit2";
+            txtUnit2.Size = new Size(182, 31);
+            txtUnit2.TabIndex = 19;
+            txtUnit2.TextChanged += txtUnit2_TextChanged;
             // 
             // cBUnit1
             // 
-            this.cBUnit1.FormattingEnabled = true;
-            this.cBUnit1.Location = new System.Drawing.Point(45, 161);
-            this.cBUnit1.Name = "cBUnit1";
-            this.cBUnit1.Size = new System.Drawing.Size(182, 33);
-            this.cBUnit1.TabIndex = 20;
-            this.cBUnit1.SelectedIndexChanged += new System.EventHandler(this.cBUnit1_SelectedIndexChanged);
+            cBUnit1.DropDownStyle = ComboBoxStyle.DropDownList;
+            cBUnit1.FormattingEnabled = true;
+            cBUnit1.Location = new Point(45, 161);
+            cBUnit1.Name = "cBUnit1";
+            cBUnit1.Size = new Size(182, 33);
+            cBUnit1.TabIndex = 20;
+            cBUnit1.SelectedIndexChanged += cBUnit1_SelectedIndexChanged;
             // 
             // cBUnit2
             // 
-            this.cBUnit2.FormattingEnabled = true;
-            this.cBUnit2.Location = new System.Drawing.Point(281, 161);
-            this.cBUnit2.Name = "cBUnit2";
-            this.cBUnit2.Size = new System.Drawing.Size(182, 33);
-            this.cBUnit2.TabIndex = 21;
-            this.cBUnit2.SelectedIndexChanged += new System.EventHandler(this.cBUnit2_SelectedIndexChanged);
+            cBUnit2.DropDownStyle = ComboBoxStyle.DropDownList;
+            cBUnit2.FormattingEnabled = true;
+            cBUnit2.Location = new Point(281, 161);
+            cBUnit2.Name = "cBUnit2";
+            cBUnit2.Size = new Size(182, 33);
+            cBUnit2.TabIndex = 21;
+            cBUnit2.SelectedIndexChanged += cBUnit2_SelectedIndexChanged;
             // 
             // errorProvider1
             // 
-            this.errorProvider1.ContainerControl = this;
+            errorProvider1.ContainerControl = this;
             // 
             // FormUnits
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(10F, 25F);
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(999, 579);
-            this.Controls.Add(this.cBUnit2);
-            this.Controls.Add(this.cBUnit1);
-            this.Controls.Add(this.txtUnit2);
-            this.Controls.Add(this.txtUnit1);
-            this.Controls.Add(this.cbTypeUnit);
-            this.Name = "FormUnits";
-            this.Text = "Units Conversion";
-            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
-            this.ResumeLayout(false);
-            this.PerformLayout();
-
+            AutoScaleDimensions = new SizeF(10F, 25F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(999, 579);
+            Controls.Add(cBUnit2);
+            Controls.Add(cBUnit1);
+            Controls.Add(txtUnit2);
+            Controls.Add(txtUnit1);
+            Controls.Add(cbTypeUnit);
+            Name = "FormUnits";
+            Text = "Units Conversion";
+            ((System.ComponentModel.ISupportInitialize)errorProvider1).EndInit();
+            ResumeLayout(false);
+            PerformLayout();
         }
 
         #endregion
